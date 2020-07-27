@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Roboto+Condensed:wght@300;400;700&display=swap");
+* {
+  font-family: 'Merriweather', serif;
+}
+
+.header {
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  position: relative;
+  height: 60px;
+}
+
+.header .navbar .logo {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.header .navbar .logo img {
+  width: 50px;
+}
+
+.header .navbar .collapse {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.header .navbar .collapse .nav-link {
+  color: #29303b;
+  font-size: 14px;
+  margin-right: 20px;
+  padding: 0;
+  -webkit-transition: .9s;
+  transition: .9s;
+}
+
+.header .navbar .collapse .nav-link:hover {
+  color: #fb4226;
+}
+
+.header .navbar .formHeader {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.header .navbar .formHeader .navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navbar .formHeader .navbar-nav .nav-item .nav-link {
+  color: #686f7a;
+  font-size: 14px;
+  margin-right: 20px;
+  padding: 0;
+  -webkit-transition: .9s;
+  transition: .9s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .navbar .formHeader .navbar-nav .nav-item .nav-link i {
+  font-size: 30px;
+  color: #9b9b9b;
+  margin-right: 10px;
+}
+
+.header .navbar .formHeader .navbar-nav .nav-item .nav-link span {
+  font-size: 13px;
+}
+
+.header .navbar .formHeader .navbar-nav .nav-item .dropdown button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+  font-size: 13px;
+}
+
+.header .navbar .formHeader .navbar-nav .nav-item .dropdown button span {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.header .navbar .formHeader .navbar-nav .nav-item .dropdown button span {
+  color: #989586;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider .homeTools {
+  display: block;
+  max-width: 940px;
+  margin: auto;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+
+.slider .homeTools .dropdown {
+  outline: none;
+}
+
+.slider .homeTools .dropdown .dropdown-toggle {
+  position: relative;
+}
+
+.slider .homeTools .dropdown .dropdown-toggle span {
+  font-size: 14px;
+}
+
+.slider .homeTools .dropdown .dropdown-toggle::after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.slider .homeTools .flim .dropdown-toggle {
+  padding: 5px 200px 5px 0;
+}
+/*# sourceMappingURL=home.css.map */
