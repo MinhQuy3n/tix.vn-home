@@ -4,14 +4,8 @@
 }
 
 .header {
-<<<<<<< HEAD
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-=======
   background-color: rgba(255, 255, 255, 0.5);
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
->>>>>>> 6beefc322480ef505f1135a4a790647c8efe5056
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   width: 100%;
   position: fixed;
   z-index: 9;
@@ -127,15 +121,8 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   z-index: 2;
   display: flex;
-<<<<<<< HEAD
   align-items: center;
-  padding: 0 20px;
-=======
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 0 10px;
->>>>>>> 6beefc322480ef505f1135a4a790647c8efe5056
 }
 
 .slider .homeTools .dropdown {
@@ -166,48 +153,6 @@
   padding: 5px 200px 5px 0;
 }
 
-<<<<<<< HEAD
-.cinema {
-  display: flex;
-  flex-direction: column;
-}
-
-button img {
-  opacity: 0.5;
-}
-
-button img:hover {
-  opacity: 1;
-}
-
-.tabcontent {
-  opacity: 0.5;
-}
-
-.tabcontent:hover {
-  opacity: 1;
-}
-
-.cinema, .tabcontent, .flimcontent {
-  height: 350px;
-  max-height: 350px;
-  background-color: transparent;
-  overflow: auto;
-}
-
-.cinema::-webkit-scrollbar {
-  width: 5px;
-  display: none;
-}
-
-.cinema::-webkit-scrollbar-thumb {
-  background: linear-gradient(to top, #999, #000);
-  border-radius: 6px;
-}
-
-.cinema:hover::-webkit-scrollbar {
-  display: block;
-=======
 .slider .homeTools .theaters .dropdown-toggle,
 .slider .homeTools .date .dropdown-toggle,
 .slider .homeTools .showtime .dropdown-toggle {
@@ -224,40 +169,249 @@ button img:hover {
   cursor: pointer;
 }
 
+.cinema .cinema__list {
+  display: none;
+}
+
+.cinema .cinemalist .cinemalist__brand {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border: 1px solid #999;
+  flex: 0 0 12.666667%;
+}
+
+.cinema .cinemalist .cinemalist__brand .cinema__logo {
+  width: 100px;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.cinema .cinemalist .cinemalist__brand .cinema__logo img {
+  width: 80%;
+  padding: 20px;
+  border-bottom: 1px solid #999;
+}
+
+.cinema .cinemalist .cinemalist__brand .cinema__logo:hover {
+  opacity: 1;
+}
+
 .container {
   max-width: 940px !important;
 }
 
-.main-container .flimblock {
+.main-container {
+  padding: 0;
+}
+
+.main-container .filmblock {
   padding-top: 75px;
 }
 
-.main-container .flimblock .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.main-container .filmblock .nav {
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
-.main-container .flimblock .nav .nav-item .nav-link {
+.main-container .filmblock .nav .nav-item .nav-link {
   background: transparent;
   color: #29303b;
   font-size: 20px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  transition: 0.5s;
   font-weight: 400;
 }
 
-.main-container .flimblock .nav .nav-item .active {
+.main-container .filmblock .nav .nav-item .active {
   color: #fb4226;
   font-size: 24px !important;
   margin-bottom: 30px;
 }
 
-.main-container .flimblock .nav .nav-item .nav-link:hover {
+.main-container .filmblock .nav .nav-item .nav-link:hover {
   font-size: 24px;
->>>>>>> 6beefc322480ef505f1135a4a790647c8efe5056
+}
+
+.main-container .filmblock .row {
+  padding: 0;
+}
+
+.main-container .filmblock .owl-nav .owl-prev {
+  left: -100px;
+}
+
+.main-container .filmblock .owl-nav .owl-next {
+  right: -100px;
+}
+
+.main-container .filmblock .owl-nav .owl-prev,
+.main-container .filmblock .owl-nav .owl-next {
+  color: #686f7a;
+  box-shadow: none;
+  font-size: 50px;
+  outline: none;
+  top: 60%;
+}
+
+.main-container .filmblock .owl-nav .owl-prev:hover,
+.main-container .filmblock .owl-nav .owl-next:hover {
+  background: transparent;
+}
+
+.item {
+  padding: 15px;
+}
+
+.item .filmblock__item {
+  width: 100%;
+  height: 450px;
+  cursor: pointer;
+}
+
+.item .filmblock__item .film__img_1 {
+  background: url(../../img/bandaoposter.png);
+}
+
+.item .filmblock__item .film__img_2 {
+  background: url(../../img/pinochicoposter.png);
+}
+
+.item .filmblock__item .film__img_3 {
+  background: url(../../img/chuyendulichposter.png);
+}
+
+.item .filmblock__item .film__img_4 {
+  background: url(../../img/dinhsuongmuposter.jpg);
+}
+
+.item .filmblock__item .film__img_1, .item .filmblock__item .film__img_2, .item .filmblock__item .film__img_3, .item .filmblock__item .film__img_4 {
+  width: 100%;
+  height: 70%;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  position: relative;
+}
+
+.item .filmblock__item .film__img_1 .overlay, .item .filmblock__item .film__img_2 .overlay, .item .filmblock__item .film__img_3 .overlay, .item .filmblock__item .film__img_4 .overlay {
+  position: absolute;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, #000, transparent 100%);
+}
+
+.item .filmblock__item .film__img_1 .rate, .item .filmblock__item .film__img_2 .rate, .item .filmblock__item .film__img_3 .rate, .item .filmblock__item .film__img_4 .rate {
+  text-align: center;
+  width: 60px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #ffffff;
+  background-color: rgba(12, 27, 54, 0.8);
+  border: 1px solid #1f2e46;
+  border-radius: 4px;
+}
+
+.item .filmblock__item .film__img_1 .rate span, .item .filmblock__item .film__img_2 .rate span, .item .filmblock__item .film__img_3 .rate span, .item .filmblock__item .film__img_4 .rate span {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-size: 16px;
+}
+
+.item .filmblock__item .film__img_1 .rate span .star, .item .filmblock__item .film__img_2 .rate span .star, .item .filmblock__item .film__img_3 .rate span .star, .item .filmblock__item .film__img_4 .rate span .star {
+  margin-top: -10px;
+}
+
+.item .filmblock__item .film__img_1 .rate span .star i, .item .filmblock__item .film__img_2 .rate span .star i, .item .filmblock__item .film__img_3 .rate span .star i, .item .filmblock__item .film__img_4 .rate span .star i {
+  font-size: 7px !important;
+  margin: -2px;
+  color: #fb4226;
+}
+
+.item .filmblock__item .film__img_1 .flimtype1, .item .filmblock__item .film__img_2 .flimtype1, .item .filmblock__item .film__img_3 .flimtype1, .item .filmblock__item .film__img_4 .flimtype1 {
+  position: absolute;
+  top: -25px;
+  left: -20px;
+  width: 150px;
+  height: auto;
+  overflow: hidden;
+}
+
+.item .filmblock__item .film__img_1 .btn-play, .item .filmblock__item .film__img_2 .btn-play, .item .filmblock__item .film__img_3 .btn-play, .item .filmblock__item .film__img_4 .btn-play {
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  display: none;
+}
+
+.item .filmblock__item .film__img_1 .btn-play i, .item .filmblock__item .film__img_2 .btn-play i, .item .filmblock__item .film__img_3 .btn-play i, .item .filmblock__item .film__img_4 .btn-play i {
+  font-size: 14px;
+}
+
+.item .filmblock__item .film__detail .namefilm {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.item .filmblock__item .film__detail .namefilm .btn-red {
+  margin-right: 8px;
+  color: #ffffff;
+  background: #fb4226;
+  border: 1px solid transparent;
+  padding: 0 5px;
+  border-radius: 4px;
+}
+
+.item .filmblock__item .film__detail .namefilm .btn-green {
+  margin-right: 8px;
+  color: #ffffff;
+  background: #00ac4d;
+  border: 1px solid transparent;
+  padding: 0 5px;
+  border-radius: 4px;
+}
+
+.item .filmblock__item .film__detail .infofilm {
+  font-size: 13px;
+  color: #686f7a;
+  margin: 10px 0 15px 0;
+}
+
+.item .filmblock__item #buySticker {
+  background: linear-gradient(to left, #fb4226, #ce3017 100%);
+  border: 1px solid transparent;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 14px;
+  color: #ffffff;
+  display: none;
+  transition: 0.5s;
+}
+
+.item .filmblock__item #buySticker:hover {
+  background: #fb4226;
+}
+
+.item .filmblock__item:hover .film__detail {
+  display: none;
+}
+
+.item .filmblock__item:hover #buySticker,
+.item .filmblock__item:hover .overlay,
+.item .filmblock__item:hover .btn-play {
+  display: block;
 }
 /*# sourceMappingURL=home.css.map */
