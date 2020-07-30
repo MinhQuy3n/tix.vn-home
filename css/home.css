@@ -4,10 +4,14 @@
 }
 
 .header {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   width: 100%;
+  position: fixed;
+  z-index: 9;
+  height: 60px;
+  top: 0;
 }
 
 .header .navbar {
@@ -126,6 +130,7 @@
 }
 
 .slider {
+  margin-top: 60px;
   position: relative;
 }
 
@@ -151,11 +156,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .slider .homeTools .dropdown {
   outline: none;
+  padding: 10px;
+}
+
+.slider .homeTools .dropdown .dropdown-menu .dropdown-item {
+  font-size: 14px;
 }
 
 .slider .homeTools .dropdown .dropdown-toggle {
@@ -176,5 +186,57 @@
 
 .slider .homeTools .flim .dropdown-toggle {
   padding: 5px 200px 5px 0;
+}
+
+.slider .homeTools .theaters .dropdown-toggle,
+.slider .homeTools .date .dropdown-toggle,
+.slider .homeTools .showtime .dropdown-toggle {
+  padding: 5px 90px 5px 0;
+}
+
+.slider .homeTools .buyticker button {
+  background: #4a4a4a;
+  border: 1px solid transparent;
+  padding: 10px 25px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 940px !important;
+}
+
+.main-container .flimblock {
+  padding-top: 75px;
+}
+
+.main-container .flimblock .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-container .flimblock .nav .nav-item .nav-link {
+  background: transparent;
+  color: #29303b;
+  font-size: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-weight: 400;
+}
+
+.main-container .flimblock .nav .nav-item .active {
+  color: #fb4226;
+  font-size: 24px !important;
+  margin-bottom: 30px;
+}
+
+.main-container .flimblock .nav .nav-item .nav-link:hover {
+  font-size: 24px;
 }
 /*# sourceMappingURL=home.css.map */
