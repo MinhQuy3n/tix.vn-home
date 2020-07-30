@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="./css/home.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    
+    <style>
+        body {font-family: "Lato", sans-serif;}
+        button:focus{
+            outline:none;
+        }
+        .tablink,.cinemalink {
+          background-color: transparent;
+          color: white;
+          float: left;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 14px 100px;
+          font-size: 17px;
+          width: 25%;
+          outline:none;
+        }
+        
+        .tablink:hover {
+          background-color: #777;
+          outline:none;
+        }
+        
+        /* Style the tab content */
+        .tabcontent,.flimcontent {
+          color: white;
+          display: none;
+          padding: 50px;
+          text-align: center;
+        }
+        
+        #Cgv,#Lotteflim {background-color:red;}
+        #Lotte,#Cgvflim {background-color:green;}
+        #Tokyo {background-color:blue;}
+        #Oslo {background-color:orange;}
+        </style>
+        </head>
+        <body>
+        <div class="row">
+            <div class="col-2 cinema">
+                <button class="tablink" onclick="openCity('Cgv', this, 'red'),openCinema('Cgvflim',this,'transparent')" id="defaultOpen">
+                    <img src="./img/logo_cgv.png">
+                </button>
+                <button class="tablink" onclick="openCity('Lotte', this, 'green'),openCinema('Lotteflim',this,'blue')">Paris</button>
+                <button class="tablink" onclick="openCity('Cgv', this, 'red'),openCinema('Cgvflim',this,'transparent')" id="defaultOpen">
+                    <img src="./img/logo_cgv.png">
+                </button><button class="tablink" onclick="openCity('Cgv', this, 'red'),openCinema('Cgvflim',this,'transparent')" id="defaultOpen">
+                    <img src="./img/logo_cgv.png">
+                </button><button class="tablink" onclick="openCity('Cgv', this, 'red'),openCinema('Cgvflim',this,'transparent')" id="defaultOpen">
+                    <img src="./img/logo_cgv.png">
+                </button><button class="tablink" onclick="openCity('Cgv', this, 'red'),openCinema('Cgvflim',this,'transparent')" id="defaultOpen">
+                    <img src="./img/logo_cgv.png">
+                </button><button class="tablink" onclick="openCity('Cgv', this, 'red'),openCinema('Cgvflim',this,'transparent')" id="defaultOpen">
+                    <img src="./img/logo_cgv.png">
+                </button><button class="tablink" onclick="openCity('Cgv', this, 'red'),openCinema('Cgvflim',this,'transparent')" id="defaultOpen">
+                    <img src="./img/logo_cgv.png">
+                </button><button class="tablink" onclick="openCity('Cgv', this, 'red'),openCinema('Cgvflim',this,'transparent')" id="defaultOpen">
+                    <img src="./img/logo_cgv.png">
+                </button>
+            </div>
+            <div id="Cgv" class="tabcontent col-4">
+                <ul>
+                    <li class="cinemalink" id="defaultOpen1" onclick="openCinema('Cgvflim',this,'yellow')" > CGV1</li>
+                    <li class="cinemalink" id="defaultOpen1" onclick="openCinema('Cgvflim',this,'yellow')" > CGV1</li>
+                    <li class="cinemalink" id="defaultOpen1" onclick="openCinema('Cgvflim',this,'yellow')" > CGV1</li>
+                    <li class="cinemalink" id="defaultOpen1" onclick="openCinema('Cgvflim',this,'yellow')" > CGV1</li>
+                    <li class="cinemalink" id="defaultOpen1" onclick="openCinema('Cgvflim',this,'yellow')" > CGV1</li>
+                    <li class="cinemalink" id="defaultOpen1" onclick="openCinema('Cgvflim',this,'yellow')" > CGV1</li>
+                    <li class="cinemalink" id="defaultOpen1" onclick="openCinema('Cgvflim',this,'yellow')" > CGV1</li>
+                    <li class="cinemalink" id="defaultOpen1" onclick="openCinema('Cgvflim',this,'yellow')" > CGV1</li>
+                    <li class="cinemalink" id="defaultOpen1" onclick="openCinema('Cgvflim',this,'yellow')" > CGV1</li>
+                    <li class="cinemalink" id="defaultOpen1" onclick="openCinema('Cgvflim',this,'yellow')" > CGV1</li>
+
+                </ul>
+              </div>
+              
+              <div id="Lotte" class="tabcontent col-4">
+                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
+                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
+                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
+                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
+                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
+                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
+                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
+                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
+                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
+                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
+                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
+                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
+                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
+
+              </div>
+              
+              <div id="Cgvflim" class="flimcontent col-6">
+                <h1>Paris flim</h1>
+                <p>Paris is the capital of France.</p> 
+                <h1>Paris flim</h1>
+                <p>Paris is the capital of France.</p> <h1>Paris flim</h1>
+                <p>Paris is the capital of France.</p> <h1>Paris flim</h1>
+                <p>Paris is the capital of France.</p> <h1>Paris flim</h1>
+                <p>Paris is the capital of France.</p> <h1>Paris flim</h1>
+                <p>Paris is the capital of France.</p> <h1>Paris flim</h1>
+                <p>Paris is the capital of France.</p> <h1>Paris flim</h1>
+                <p>Paris is the capital of France.</p> <h1>Paris flim</h1>
+                <p>Paris is the capital of France.</p> <h1>Paris flim</h1>
+                <p>Paris is the capital of France.</p> <h1>Paris flim</h1>
+                <p>Paris is the capital of France.</p> <h1>Paris flim</h1>
+                <p>Paris is the capital of France.</p> 
+              </div>
+              <div id="Lotteflim" class="flimcontent col-6">
+                <h1>Lottte flim</h1>
+                <p>Paris is the capital of France.</p> 
+              </div>
+        </div>
+           
+                    
+       
+        
+        <script>
+            function openCinema(CinemaName,elmnt,color) {
+              var i, flimcontent, cinemalink;
+              flimcontent = document.getElementsByClassName("flimcontent");
+              for (i = 0; i < flimcontent.length; i++) {
+                flimcontent[i].style.display = "none";
+              }
+              cinemalink = document.getElementsByClassName("cinemalink");
+              for (i = 0; i < cinemalink.length; i++) {
+                cinemalink[i].style.backgroundColor = "";
+              }
+              document.getElementById(CinemaName).style.display = "block";
+              elmnt.style.backgroundColor = color;
+            
+            }
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen1").click();
+            
+            </script>
+
+        <script>
+        function openCity(cityName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(cityName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        
+        </script>
+
+  
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

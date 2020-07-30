@@ -5,18 +5,13 @@
 
 .header {
   background-color: rgba(255, 255, 255, 0.9);
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   width: 100%;
 }
 
 .header .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify !important;
-      -ms-flex-pack: justify !important;
-          justify-content: space-between !important;
+  justify-content: space-between !important;
   position: relative;
   height: 60px;
 }
@@ -25,8 +20,7 @@
   position: absolute;
   top: 50%;
   left: 15px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .header .navbar .logo img {
@@ -37,8 +31,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .header .navbar .collapse .nav-link {
@@ -46,7 +39,6 @@
   font-size: 14px;
   margin-right: 20px;
   padding: 0;
-  -webkit-transition: .9s;
   transition: .9s;
 }
 
@@ -58,20 +50,13 @@
   position: absolute;
   right: 15px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .header .navbar .formHeader .navbar-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .header .navbar .formHeader .navbar-nav .nav-item .nav-link {
@@ -79,17 +64,10 @@
   font-size: 14px;
   margin-right: 20px;
   padding: 0;
-  -webkit-transition: .9s;
   transition: .9s;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .header .navbar .formHeader .navbar-nav .nav-item .nav-link i {
@@ -103,15 +81,9 @@
 }
 
 .header .navbar .formHeader .navbar-nav .nav-item .dropdown button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background: transparent;
   font-size: 13px;
 }
@@ -138,19 +110,13 @@
   bottom: 0;
   width: 100%;
   left: 50%;
-  -webkit-transform: translate(-50%, 50%);
-          transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
   background-color: #fff;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0 20px;
 }
 
@@ -170,11 +136,52 @@
   position: absolute;
   right: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .slider .homeTools .flim .dropdown-toggle {
   padding: 5px 200px 5px 0;
+}
+
+.cinema {
+  display: flex;
+  flex-direction: column;
+}
+
+button img {
+  opacity: 0.5;
+}
+
+button img:hover {
+  opacity: 1;
+}
+
+.tabcontent {
+  opacity: 0.5;
+}
+
+.tabcontent:hover {
+  opacity: 1;
+}
+
+.cinema, .tabcontent, .flimcontent {
+  height: 350px;
+  max-height: 350px;
+  background-color: transparent;
+  overflow: auto;
+}
+
+.cinema::-webkit-scrollbar {
+  width: 5px;
+  display: none;
+}
+
+.cinema::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top, #999, #000);
+  border-radius: 6px;
+}
+
+.cinema:hover::-webkit-scrollbar {
+  display: block;
 }
 /*# sourceMappingURL=home.css.map */
