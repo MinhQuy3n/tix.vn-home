@@ -1,8 +1,9 @@
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
-      loop: false,
+      loop: true,
       margin: 10,
       nav: true,
+      dots:false,
       responsive : {
         // breakpoint from 0 up
         0 : {
@@ -23,7 +24,7 @@ $(document).ready(function () {
           items: 4,
         },
         1200:{
-          items: 5,
+          items: 1,
         }
     }
     

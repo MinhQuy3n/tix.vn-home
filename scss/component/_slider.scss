@@ -1,43 +1,64 @@
-.slider{
-    position: relative;
-    .homeTools {
-        display: block;
-        max-width: 940px;
-        margin: auto;
-        height: 80px;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        left: 50%;
-        transform: translate(-50%, 50%);
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        z-index: 2;
-        display:flex;
-        align-items: center;
-        padding:0 spacing(2);
-        .dropdown {
-          outline: none;
-      
-          .dropdown-toggle {
-            position: relative;
-            span {
-              font-size: $subtitle;
-            }
-            &::after {
-              position: absolute;
-              right: 0;
-              top: 50%;
-              transform: translateY(-50%);
-            }
-          }
-        }
-        .flim {
-          .dropdown-toggle {
-            padding: spacing(0.5) spacing(20) spacing(0.5) 0;
-          }
+.slider {
+  margin-top: spacing(6);
+
+  position: relative;
+  .homeTools {
+    display: block;
+    max-width: 940px;
+    margin: auto;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    padding: 0 spacing(1);
+    .dropdown {
+      outline: none;
+      padding: 10px;
+      .dropdown-menu {
+        .dropdown-item {
+          font-size: $subtitle;
         }
       }
+      .dropdown-toggle {
+        position: relative;
+        span {
+          font-size: $subtitle;
+        }
+        &::after {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+    .flim {
+      .dropdown-toggle {
+        padding: spacing(0.5) spacing(20) spacing(0.5) 0;
+      }
+    }
+    .theaters,
+    .date,
+    .showtime {
+      .dropdown-toggle {
+        padding: spacing(0.5) spacing(9) spacing(0.5) 0;
+      }
+    }
+    .buyticker{
+      button{
+        @include Button ($darkGrey, 1px solid transparent, spacing(1) spacing(2.5), 4px);
+        font-size:$subtitle;
+        color:$textWhite;
+        cursor: pointer;
+      }
+    }
+  }
 }
-

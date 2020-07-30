@@ -1,0 +1,27 @@
+.main-container{
+    .flimblock{
+        padding-top:spacing(7.5);
+        .nav{
+            display:flex;
+            justify-content: center;
+            .nav-item{
+                .nav-link{
+                    background:transparent;
+                    color:$textPrimary;
+                    font-size:$h4; 
+                    transition: .5s;
+                    font-weight: $fwRegular;
+                }
+                
+                .active{
+                    color:$textRedOrange;
+                    font-size:$h4 +4px !important; 
+                    margin-bottom: spacing(3);
+                }
+                .nav-link:hover{
+                    font-size:$h4+4px;
+                }
+            }
+        }
+    }
+}
