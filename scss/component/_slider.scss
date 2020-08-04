@@ -1,6 +1,5 @@
 .slider {
   margin-top: spacing(6);
-
   position: relative;
   .homeTools {
     display: block;
@@ -61,4 +60,22 @@
       }
     }
   }
+  .single-item{
+    div{
+      img{
+        height:100%;
+        width:100%;
+      }
+    }
+  }
+  @media screen and (max-width:992px){
+    .homeTools{
+      display:none;
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }

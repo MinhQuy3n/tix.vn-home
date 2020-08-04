@@ -1,202 +1,1276 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="stylesheet" href="./css/home.css" />
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    
-    <style>
-        body {font-family: "Lato", sans-serif;}
-        button:focus{
-            outline:none;
-        }
-        .tablink,.cinemalink {
-          background-color: transparent;
-          color: white;
-          float: left;
-          border: none;
-          outline: none;
-          cursor: pointer;
-          padding: 14px 100px;
-          font-size: 17px;
-          width: 25%;
-          outline:none;
-        }
-        
-        .tablink:hover {
-          background-color: #777;
-          outline:none;
-        }
-        
-        /* Style the tab content */
-        .tabcontent,.flimcontent {
-          color: white;
-          display: none;
-          padding: 50px;
-          text-align: center;
-        }
-        
-        #Cgv,#Lotteflim {background-color:red;}
-        #Lotte,#Cgvflim {background-color:green;}
-        #Tokyo {background-color:blue;}
-        #Oslo {background-color:orange;}
-        </style>
-        </head>
-        <body>
-        <div class="row">
-            <div class="col-2 cinema">
-                <button class="tablink" onclick="openCity('Cgv', this, 'red'),openCinema('Cgvflim',this,'transparent')" id="defaultOpen">
-                    <img src="./img/logo_cgv.png">
-                </button>
-                <button class="tablink" onclick="openCity('Lotte', this, 'green'),openCinema('Lotteflim',this,'blue')">Paris</button>
-                <button class="tablink" onclick="openCity('Cgv', this, 'red'),openCinema('Cgvflim',this,'transparent')" id="defaultOpen">
-                    <img src="./img/logo_cgv.png">
-                </button><button class="tablink" onclick="openCity('Cgv', this, 'red'),openCinema('Cgvflim',this,'transparent')" id="defaultOpen">
-                    <img src="./img/logo_cgv.png">
-                </button><button class="tablink" onclick="openCity('Cgv', this, 'red'),openCinema('Cgvflim',this,'transparent')" id="defaultOpen">
-                    <img src="./img/logo_cgv.png">
-                </button><button class="tablink" onclick="openCity('Cgv', this, 'red'),openCinema('Cgvflim',this,'transparent')" id="defaultOpen">
-                    <img src="./img/logo_cgv.png">
-                </button><button class="tablink" onclick="openCity('Cgv', this, 'red'),openCinema('Cgvflim',this,'transparent')" id="defaultOpen">
-                    <img src="./img/logo_cgv.png">
-                </button><button class="tablink" onclick="openCity('Cgv', this, 'red'),openCinema('Cgvflim',this,'transparent')" id="defaultOpen">
-                    <img src="./img/logo_cgv.png">
-                </button><button class="tablink" onclick="openCity('Cgv', this, 'red'),openCinema('Cgvflim',this,'transparent')" id="defaultOpen">
-                    <img src="./img/logo_cgv.png">
-                </button>
-            </div>
-            <div id="Cgv" class="tabcontent col-4">
-                <ul>
-                    <li class="cinemalink" id="defaultOpen1" onclick="openCinema('Cgvflim',this,'yellow')" > CGV1</li>
-                    <li class="cinemalink" id="defaultOpen1" onclick="openCinema('Cgvflim',this,'yellow')" > CGV1</li>
-                    <li class="cinemalink" id="defaultOpen1" onclick="openCinema('Cgvflim',this,'yellow')" > CGV1</li>
-                    <li class="cinemalink" id="defaultOpen1" onclick="openCinema('Cgvflim',this,'yellow')" > CGV1</li>
-                    <li class="cinemalink" id="defaultOpen1" onclick="openCinema('Cgvflim',this,'yellow')" > CGV1</li>
-                    <li class="cinemalink" id="defaultOpen1" onclick="openCinema('Cgvflim',this,'yellow')" > CGV1</li>
-                    <li class="cinemalink" id="defaultOpen1" onclick="openCinema('Cgvflim',this,'yellow')" > CGV1</li>
-                    <li class="cinemalink" id="defaultOpen1" onclick="openCinema('Cgvflim',this,'yellow')" > CGV1</li>
-                    <li class="cinemalink" id="defaultOpen1" onclick="openCinema('Cgvflim',this,'yellow')" > CGV1</li>
-                    <li class="cinemalink" id="defaultOpen1" onclick="openCinema('Cgvflim',this,'yellow')" > CGV1</li>
-
-                </ul>
-              </div>
-              
-              <div id="Lotte" class="tabcontent col-4">
-                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
-                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
-                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
-                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
-                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
-                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
-                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
-                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
-                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
-                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
-                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
-                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
-                <li class="cinemalink" onclick="openCinema('Lotteflim',this,'blue')"> CGV2</li>
-
-              </div>
-              
-              <div id="Cgvflim" class="flimcontent col-6">
-                <h1>Paris flim</h1>
-                <p>Paris is the capital of France.</p> 
-                <h1>Paris flim</h1>
-                <p>Paris is the capital of France.</p> <h1>Paris flim</h1>
-                <p>Paris is the capital of France.</p> <h1>Paris flim</h1>
-                <p>Paris is the capital of France.</p> <h1>Paris flim</h1>
-                <p>Paris is the capital of France.</p> <h1>Paris flim</h1>
-                <p>Paris is the capital of France.</p> <h1>Paris flim</h1>
-                <p>Paris is the capital of France.</p> <h1>Paris flim</h1>
-                <p>Paris is the capital of France.</p> <h1>Paris flim</h1>
-                <p>Paris is the capital of France.</p> <h1>Paris flim</h1>
-                <p>Paris is the capital of France.</p> <h1>Paris flim</h1>
-                <p>Paris is the capital of France.</p> <h1>Paris flim</h1>
-                <p>Paris is the capital of France.</p> 
-              </div>
-              <div id="Lotteflim" class="flimcontent col-6">
-                <h1>Lottte flim</h1>
-                <p>Paris is the capital of France.</p> 
-              </div>
+<section class="newsblock">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link active"
+        id="home-tab"
+        data-toggle="tab"
+        href="#dienanh"
+        role="tab"
+        aria-controls="home"
+        aria-selected="true"
+        >Điện Ảnh 24h
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link"
+        id="profile-tab"
+        data-toggle="tab"
+        href="#review"
+        role="tab"
+        aria-controls="profile"
+        aria-selected="false"
+        >Review</a
+      >
+    </li>
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link"
+        id="contact-tab"
+        data-toggle="tab"
+        href="#khuyenmai"
+        role="tab"
+        aria-controls="contact"
+        aria-selected="false"
+        >Khuyến Mãi</a
+      >
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div
+      class="tab-pane fade show active"
+      id="dienanh"
+      role="tabpanel"
+      aria-labelledby="home-tab"
+    >
+      <div class="news__block__list row">
+        <div class="new__block__item col-sm-6">
+          <div class="item__img">
+            <img src="img/dienanh1.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm
+              Chiêu
+            </h1>
+            <p>
+              Sau khi tiết lộ nhân tố đầu tiên là NSND Lê Khanh sẽ tiếp
+              tục tham gia phần tiếp theo của Gái già lắm chiêu với mái
+              tóc được cắt ngắn đầy mạnh mẽ và nam tính. Kaity Nguyễn sẽ
+              là mỹ nhân tiếp theo nối gót hai đàn chị là Diễm My 9X và
+              Ninh
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 0</i>
+            <i class="fa fa-comment-alt"> 1</i>
+          </div>
         </div>
-           
-                    
-       
-        
-        <script>
-            function openCinema(CinemaName,elmnt,color) {
-              var i, flimcontent, cinemalink;
-              flimcontent = document.getElementsByClassName("flimcontent");
-              for (i = 0; i < flimcontent.length; i++) {
-                flimcontent[i].style.display = "none";
-              }
-              cinemalink = document.getElementsByClassName("cinemalink");
-              for (i = 0; i < cinemalink.length; i++) {
-                cinemalink[i].style.backgroundColor = "";
-              }
-              document.getElementById(CinemaName).style.display = "block";
-              elmnt.style.backgroundColor = color;
-            
-            }
-            // Get the element with id="defaultOpen" and click on it
-            document.getElementById("defaultOpen1").click();
-            
-            </script>
-
-        <script>
-        function openCity(cityName,elmnt,color) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablink");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].style.backgroundColor = "";
-          }
-          document.getElementById(cityName).style.display = "block";
-          elmnt.style.backgroundColor = color;
-        }
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-        
-        </script>
-
-  
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
+        <div class="new__block__item col-sm-6">
+          <div class="item__img">
+            <img src="img/dienanh2.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ
+              Pinocchio
+            </h1>
+            <p>
+              Không chỉ chuyển tải được giá trị của tác phẩm gốc, “Cậu Bé
+              Người Gỗ Pinocchio” của năm 2020 còn thành công chinh phục
+              thế hệ khán giả hiện đại với một trải nghiệm điện ảnh đầy
+              sắc màu nhưng cũng vô cùng mới lạ. Cùng
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 627</i>
+            <i class="fa fa-comment-alt"> 127</i>
+          </div>
+        </div>
+      </div>
+      <div class="news__block__list row">
+        <div class="new__block__item col-sm-4">
+          <div class="item__img">
+            <img src="img/dienanh3.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              TENET công bố ngày khởi chiếu chính thức tại Việt Nam
+            </h1>
+            <p>
+              Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra
+              thông báo chính thức về ngày khởi chiếu cho bom tấn TENET
+              tại các thị trường bên
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 100</i>
+            <i class="fa fa-comment-alt"> 50</i>
+          </div>
+        </div>
+        <div class="new__block__item col-sm-4">
+          <div class="item__img">
+            <img src="img/dienanh4.jpg" />
+          </div>
+          <div class="item__content">
+            <h1>
+              Khi phụ nữ không còn ở thế trốn chạy của nạn nhân
+            </h1>
+            <p>
+              Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô
+              Hình mang đến một góc nhìn mới về hình ảnh những người phụ
+              nữ thời hiện đại. Điều đó được
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 100</i>
+            <i class="fa fa-comment-alt"> 50</i>
+          </div>
+        </div>
+        <div class="new__block__item__small col-sm-4">
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall1.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall2.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Diễn viên đặc biệt của Bằng Chứng Vô Hình</p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall3.png" />
+            </div>
+            <div class="item__small__content">
+              <p>
+                Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!
+              </p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall4.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news__block__list row">
+        <div class="new__block__item col-sm-6">
+          <div class="item__img">
+            <img src="img/dienanh1.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm
+              Chiêu
+            </h1>
+            <p>
+              Sau khi tiết lộ nhân tố đầu tiên là NSND Lê Khanh sẽ tiếp
+              tục tham gia phần tiếp theo của Gái già lắm chiêu với mái
+              tóc được cắt ngắn đầy mạnh mẽ và nam tính. Kaity Nguyễn sẽ
+              là mỹ nhân tiếp theo nối gót hai đàn chị là Diễm My 9X và
+              Ninh
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 0</i>
+            <i class="fa fa-comment-alt"> 1</i>
+          </div>
+        </div>
+        <div class="new__block__item col-sm-6">
+          <div class="item__img">
+            <img src="img/dienanh2.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ
+              Pinocchio
+            </h1>
+            <p>
+              Không chỉ chuyển tải được giá trị của tác phẩm gốc, “Cậu Bé
+              Người Gỗ Pinocchio” của năm 2020 còn thành công chinh phục
+              thế hệ khán giả hiện đại với một trải nghiệm điện ảnh đầy
+              sắc màu nhưng cũng vô cùng mới lạ. Cùng
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 627</i>
+            <i class="fa fa-comment-alt"> 127</i>
+          </div>
+        </div>
+      </div>
+      <div class="news__block__list row">
+        <div class="new__block__item col-sm-4">
+          <div class="item__img">
+            <img src="img/dienanh3.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              TENET công bố ngày khởi chiếu chính thức tại Việt Nam
+            </h1>
+            <p>
+              Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra
+              thông báo chính thức về ngày khởi chiếu cho bom tấn TENET
+              tại các thị trường bên
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 100</i>
+            <i class="fa fa-comment-alt"> 50</i>
+          </div>
+        </div>
+        <div class="new__block__item col-sm-4">
+          <div class="item__img">
+            <img src="img/dienanh4.jpg" />
+          </div>
+          <div class="item__content">
+            <h1>
+              Khi phụ nữ không còn ở thế trốn chạy của nạn nhân
+            </h1>
+            <p>
+              Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô
+              Hình mang đến một góc nhìn mới về hình ảnh những người phụ
+              nữ thời hiện đại. Điều đó được
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 100</i>
+            <i class="fa fa-comment-alt"> 50</i>
+          </div>
+        </div>
+        <div class="new__block__item__small col-sm-4">
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall1.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall2.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Diễn viên đặc biệt của Bằng Chứng Vô Hình</p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall3.png" />
+            </div>
+            <div class="item__small__content">
+              <p>
+                Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!
+              </p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall4.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news__block__list row">
+        <div class="new__block__item col-sm-6">
+          <div class="item__img">
+            <img src="img/dienanh1.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm
+              Chiêu
+            </h1>
+            <p>
+              Sau khi tiết lộ nhân tố đầu tiên là NSND Lê Khanh sẽ tiếp
+              tục tham gia phần tiếp theo của Gái già lắm chiêu với mái
+              tóc được cắt ngắn đầy mạnh mẽ và nam tính. Kaity Nguyễn sẽ
+              là mỹ nhân tiếp theo nối gót hai đàn chị là Diễm My 9X và
+              Ninh
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 0</i>
+            <i class="fa fa-comment-alt"> 1</i>
+          </div>
+        </div>
+        <div class="new__block__item col-sm-6">
+          <div class="item__img">
+            <img src="img/dienanh2.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ
+              Pinocchio
+            </h1>
+            <p>
+              Không chỉ chuyển tải được giá trị của tác phẩm gốc, “Cậu Bé
+              Người Gỗ Pinocchio” của năm 2020 còn thành công chinh phục
+              thế hệ khán giả hiện đại với một trải nghiệm điện ảnh đầy
+              sắc màu nhưng cũng vô cùng mới lạ. Cùng
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 627</i>
+            <i class="fa fa-comment-alt"> 127</i>
+          </div>
+        </div>
+      </div>
+      <div class="news__block__list row">
+        <div class="new__block__item col-sm-4">
+          <div class="item__img">
+            <img src="img/dienanh3.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              TENET công bố ngày khởi chiếu chính thức tại Việt Nam
+            </h1>
+            <p>
+              Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra
+              thông báo chính thức về ngày khởi chiếu cho bom tấn TENET
+              tại các thị trường bên
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 100</i>
+            <i class="fa fa-comment-alt"> 50</i>
+          </div>
+        </div>
+        <div class="new__block__item col-sm-4">
+          <div class="item__img">
+            <img src="img/dienanh4.jpg" />
+          </div>
+          <div class="item__content">
+            <h1>
+              Khi phụ nữ không còn ở thế trốn chạy của nạn nhân
+            </h1>
+            <p>
+              Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô
+              Hình mang đến một góc nhìn mới về hình ảnh những người phụ
+              nữ thời hiện đại. Điều đó được
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 100</i>
+            <i class="fa fa-comment-alt"> 50</i>
+          </div>
+        </div>
+        <div class="new__block__item__small col-sm-4">
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall1.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall2.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Diễn viên đặc biệt của Bằng Chứng Vô Hình</p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall3.png" />
+            </div>
+            <div class="item__small__content">
+              <p>
+                Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!
+              </p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall4.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="review"
+      role="tabpanel"
+      aria-labelledby="profile-tab"
+    >
+      <div class="news__block__list row">
+        <div class="new__block__item col-sm-6">
+          <div class="item__img">
+            <img src="img/dienanhrw1.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm
+              Chiêu
+            </h1>
+            <p>
+              Sau khi tiết lộ nhân tố đầu tiên là NSND Lê Khanh sẽ tiếp
+              tục tham gia phần tiếp theo của Gái già lắm chiêu với mái
+              tóc được cắt ngắn đầy mạnh mẽ và nam tính. Kaity Nguyễn sẽ
+              là mỹ nhân tiếp theo nối gót hai đàn chị là Diễm My 9X và
+              Ninh
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 0</i>
+            <i class="fa fa-comment-alt"> 1</i>
+          </div>
+        </div>
+        <div class="new__block__item col-sm-6">
+          <div class="item__img">
+            <img src="img/dienanhrw2.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ
+              Pinocchio
+            </h1>
+            <p>
+              Không chỉ chuyển tải được giá trị của tác phẩm gốc, “Cậu Bé
+              Người Gỗ Pinocchio” của năm 2020 còn thành công chinh phục
+              thế hệ khán giả hiện đại với một trải nghiệm điện ảnh đầy
+              sắc màu nhưng cũng vô cùng mới lạ. Cùng
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 627</i>
+            <i class="fa fa-comment-alt"> 127</i>
+          </div>
+        </div>
+      </div>
+      <div class="news__block__list row">
+        <div class="new__block__item col-sm-4">
+          <div class="item__img">
+            <img src="img/dienanhrw4.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              TENET công bố ngày khởi chiếu chính thức tại Việt Nam
+            </h1>
+            <p>
+              Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra
+              thông báo chính thức về ngày khởi chiếu cho bom tấn TENET
+              tại các thị trường bên
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 100</i>
+            <i class="fa fa-comment-alt"> 50</i>
+          </div>
+        </div>
+        <div class="new__block__item col-sm-4">
+          <div class="item__img">
+            <img src="img/dienanhrw5.jpg" />
+          </div>
+          <div class="item__content">
+            <h1>
+              Khi phụ nữ không còn ở thế trốn chạy của nạn nhân
+            </h1>
+            <p>
+              Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô
+              Hình mang đến một góc nhìn mới về hình ảnh những người phụ
+              nữ thời hiện đại. Điều đó được
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 100</i>
+            <i class="fa fa-comment-alt"> 50</i>
+          </div>
+        </div>
+        <div class="new__block__item__small col-sm-4">
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhrwsmall2.jpg" />
+            </div>
+            <div class="item__small__content">
+              <p>Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhrwsmall3.jpg" />
+            </div>
+            <div class="item__small__content">
+              <p>Diễn viên đặc biệt của Bằng Chứng Vô Hình</p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhrwsmall3.jpg" />
+            </div>
+            <div class="item__small__content">
+              <p>
+                Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!
+              </p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall4.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news__block__list row">
+        <div class="new__block__item col-sm-6">
+          <div class="item__img">
+            <img src="img/dienanhrw1.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm
+              Chiêu
+            </h1>
+            <p>
+              Sau khi tiết lộ nhân tố đầu tiên là NSND Lê Khanh sẽ tiếp
+              tục tham gia phần tiếp theo của Gái già lắm chiêu với mái
+              tóc được cắt ngắn đầy mạnh mẽ và nam tính. Kaity Nguyễn sẽ
+              là mỹ nhân tiếp theo nối gót hai đàn chị là Diễm My 9X và
+              Ninh
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 0</i>
+            <i class="fa fa-comment-alt"> 1</i>
+          </div>
+        </div>
+        <div class="new__block__item col-sm-6">
+          <div class="item__img">
+            <img src="img/dienanhrw2.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ
+              Pinocchio
+            </h1>
+            <p>
+              Không chỉ chuyển tải được giá trị của tác phẩm gốc, “Cậu Bé
+              Người Gỗ Pinocchio” của năm 2020 còn thành công chinh phục
+              thế hệ khán giả hiện đại với một trải nghiệm điện ảnh đầy
+              sắc màu nhưng cũng vô cùng mới lạ. Cùng
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 627</i>
+            <i class="fa fa-comment-alt"> 127</i>
+          </div>
+        </div>
+      </div>
+      <div class="news__block__list row">
+        <div class="new__block__item col-sm-4">
+          <div class="item__img">
+            <img src="img/dienanhrw4.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              TENET công bố ngày khởi chiếu chính thức tại Việt Nam
+            </h1>
+            <p>
+              Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra
+              thông báo chính thức về ngày khởi chiếu cho bom tấn TENET
+              tại các thị trường bên
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 100</i>
+            <i class="fa fa-comment-alt"> 50</i>
+          </div>
+        </div>
+        <div class="new__block__item col-sm-4">
+          <div class="item__img">
+            <img src="img/dienanhrw5.jpg" />
+          </div>
+          <div class="item__content">
+            <h1>
+              Khi phụ nữ không còn ở thế trốn chạy của nạn nhân
+            </h1>
+            <p>
+              Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô
+              Hình mang đến một góc nhìn mới về hình ảnh những người phụ
+              nữ thời hiện đại. Điều đó được
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 100</i>
+            <i class="fa fa-comment-alt"> 50</i>
+          </div>
+        </div>
+        <div class="new__block__item__small col-sm-4">
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhrwsmall2.jpg" />
+            </div>
+            <div class="item__small__content">
+              <p>Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhrwsmall3.jpg" />
+            </div>
+            <div class="item__small__content">
+              <p>Diễn viên đặc biệt của Bằng Chứng Vô Hình</p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhrwsmall3.jpg" />
+            </div>
+            <div class="item__small__content">
+              <p>
+                Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!
+              </p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall4.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news__block__list row">
+        <div class="new__block__item col-sm-6">
+          <div class="item__img">
+            <img src="img/dienanhrw1.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm
+              Chiêu
+            </h1>
+            <p>
+              Sau khi tiết lộ nhân tố đầu tiên là NSND Lê Khanh sẽ tiếp
+              tục tham gia phần tiếp theo của Gái già lắm chiêu với mái
+              tóc được cắt ngắn đầy mạnh mẽ và nam tính. Kaity Nguyễn sẽ
+              là mỹ nhân tiếp theo nối gót hai đàn chị là Diễm My 9X và
+              Ninh
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 0</i>
+            <i class="fa fa-comment-alt"> 1</i>
+          </div>
+        </div>
+        <div class="new__block__item col-sm-6">
+          <div class="item__img">
+            <img src="img/dienanhrw2.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ
+              Pinocchio
+            </h1>
+            <p>
+              Không chỉ chuyển tải được giá trị của tác phẩm gốc, “Cậu Bé
+              Người Gỗ Pinocchio” của năm 2020 còn thành công chinh phục
+              thế hệ khán giả hiện đại với một trải nghiệm điện ảnh đầy
+              sắc màu nhưng cũng vô cùng mới lạ. Cùng
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 627</i>
+            <i class="fa fa-comment-alt"> 127</i>
+          </div>
+        </div>
+      </div>
+      <div class="news__block__list row">
+        <div class="new__block__item col-sm-4">
+          <div class="item__img">
+            <img src="img/dienanhrw4.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              TENET công bố ngày khởi chiếu chính thức tại Việt Nam
+            </h1>
+            <p>
+              Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra
+              thông báo chính thức về ngày khởi chiếu cho bom tấn TENET
+              tại các thị trường bên
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 100</i>
+            <i class="fa fa-comment-alt"> 50</i>
+          </div>
+        </div>
+        <div class="new__block__item col-sm-4">
+          <div class="item__img">
+            <img src="img/dienanhrw5.jpg" />
+          </div>
+          <div class="item__content">
+            <h1>
+              Khi phụ nữ không còn ở thế trốn chạy của nạn nhân
+            </h1>
+            <p>
+              Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô
+              Hình mang đến một góc nhìn mới về hình ảnh những người phụ
+              nữ thời hiện đại. Điều đó được
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 100</i>
+            <i class="fa fa-comment-alt"> 50</i>
+          </div>
+        </div>
+        <div class="new__block__item__small col-sm-4">
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhrwsmall2.jpg" />
+            </div>
+            <div class="item__small__content">
+              <p>Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhrwsmall3.jpg" />
+            </div>
+            <div class="item__small__content">
+              <p>Diễn viên đặc biệt của Bằng Chứng Vô Hình</p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhrwsmall3.jpg" />
+            </div>
+            <div class="item__small__content">
+              <p>
+                Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!
+              </p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall4.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news__block__list row">
+        <div class="new__block__item col-sm-6">
+          <div class="item__img">
+            <img src="img/dienanhrw1.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm
+              Chiêu
+            </h1>
+            <p>
+              Sau khi tiết lộ nhân tố đầu tiên là NSND Lê Khanh sẽ tiếp
+              tục tham gia phần tiếp theo của Gái già lắm chiêu với mái
+              tóc được cắt ngắn đầy mạnh mẽ và nam tính. Kaity Nguyễn sẽ
+              là mỹ nhân tiếp theo nối gót hai đàn chị là Diễm My 9X và
+              Ninh
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 0</i>
+            <i class="fa fa-comment-alt"> 1</i>
+          </div>
+        </div>
+        <div class="new__block__item col-sm-6">
+          <div class="item__img">
+            <img src="img/dienanhrw2.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ
+              Pinocchio
+            </h1>
+            <p>
+              Không chỉ chuyển tải được giá trị của tác phẩm gốc, “Cậu Bé
+              Người Gỗ Pinocchio” của năm 2020 còn thành công chinh phục
+              thế hệ khán giả hiện đại với một trải nghiệm điện ảnh đầy
+              sắc màu nhưng cũng vô cùng mới lạ. Cùng
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 627</i>
+            <i class="fa fa-comment-alt"> 127</i>
+          </div>
+        </div>
+      </div>
+      <div class="news__block__list row">
+        <div class="new__block__item col-sm-4">
+          <div class="item__img">
+            <img src="img/dienanhrw4.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              TENET công bố ngày khởi chiếu chính thức tại Việt Nam
+            </h1>
+            <p>
+              Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra
+              thông báo chính thức về ngày khởi chiếu cho bom tấn TENET
+              tại các thị trường bên
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 100</i>
+            <i class="fa fa-comment-alt"> 50</i>
+          </div>
+        </div>
+        <div class="new__block__item col-sm-4">
+          <div class="item__img">
+            <img src="img/dienanhrw5.jpg" />
+          </div>
+          <div class="item__content">
+            <h1>
+              Khi phụ nữ không còn ở thế trốn chạy của nạn nhân
+            </h1>
+            <p>
+              Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô
+              Hình mang đến một góc nhìn mới về hình ảnh những người phụ
+              nữ thời hiện đại. Điều đó được
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 100</i>
+            <i class="fa fa-comment-alt"> 50</i>
+          </div>
+        </div>
+        <div class="new__block__item__small col-sm-4">
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhrwsmall2.jpg" />
+            </div>
+            <div class="item__small__content">
+              <p>Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhrwsmall3.jpg" />
+            </div>
+            <div class="item__small__content">
+              <p>Diễn viên đặc biệt của Bằng Chứng Vô Hình</p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhrwsmall3.jpg" />
+            </div>
+            <div class="item__small__content">
+              <p>
+                Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!
+              </p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall4.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="khuyenmai"
+      role="tabpanel"
+      aria-labelledby="contact-tab"
+    >
+      <div class="news__block__list row">
+        <div class="new__block__item col-sm-6">
+          <div class="item__img">
+            <img src="img/dienanh1.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm
+              Chiêu
+            </h1>
+            <p>
+              Sau khi tiết lộ nhân tố đầu tiên là NSND Lê Khanh sẽ tiếp
+              tục tham gia phần tiếp theo của Gái già lắm chiêu với mái
+              tóc được cắt ngắn đầy mạnh mẽ và nam tính. Kaity Nguyễn sẽ
+              là mỹ nhân tiếp theo nối gót hai đàn chị là Diễm My 9X và
+              Ninh
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 0</i>
+            <i class="fa fa-comment-alt"> 1</i>
+          </div>
+        </div>
+        <div class="new__block__item col-sm-6">
+          <div class="item__img">
+            <img src="img/dienanh2.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ
+              Pinocchio
+            </h1>
+            <p>
+              Không chỉ chuyển tải được giá trị của tác phẩm gốc, “Cậu Bé
+              Người Gỗ Pinocchio” của năm 2020 còn thành công chinh phục
+              thế hệ khán giả hiện đại với một trải nghiệm điện ảnh đầy
+              sắc màu nhưng cũng vô cùng mới lạ. Cùng
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 627</i>
+            <i class="fa fa-comment-alt"> 127</i>
+          </div>
+        </div>
+      </div>
+      <div class="news__block__list row">
+        <div class="new__block__item col-sm-4">
+          <div class="item__img">
+            <img src="img/dienanh3.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              TENET công bố ngày khởi chiếu chính thức tại Việt Nam
+            </h1>
+            <p>
+              Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra
+              thông báo chính thức về ngày khởi chiếu cho bom tấn TENET
+              tại các thị trường bên
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 100</i>
+            <i class="fa fa-comment-alt"> 50</i>
+          </div>
+        </div>
+        <div class="new__block__item col-sm-4">
+          <div class="item__img">
+            <img src="img/dienanh4.jpg" />
+          </div>
+          <div class="item__content">
+            <h1>
+              Khi phụ nữ không còn ở thế trốn chạy của nạn nhân
+            </h1>
+            <p>
+              Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô
+              Hình mang đến một góc nhìn mới về hình ảnh những người phụ
+              nữ thời hiện đại. Điều đó được
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 100</i>
+            <i class="fa fa-comment-alt"> 50</i>
+          </div>
+        </div>
+        <div class="new__block__item__small col-sm-4">
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall1.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall2.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Diễn viên đặc biệt của Bằng Chứng Vô Hình</p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall3.png" />
+            </div>
+            <div class="item__small__content">
+              <p>
+                Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!
+              </p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall4.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news__block__list row">
+        <div class="new__block__item col-sm-6">
+          <div class="item__img">
+            <img src="img/dienanh1.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm
+              Chiêu
+            </h1>
+            <p>
+              Sau khi tiết lộ nhân tố đầu tiên là NSND Lê Khanh sẽ tiếp
+              tục tham gia phần tiếp theo của Gái già lắm chiêu với mái
+              tóc được cắt ngắn đầy mạnh mẽ và nam tính. Kaity Nguyễn sẽ
+              là mỹ nhân tiếp theo nối gót hai đàn chị là Diễm My 9X và
+              Ninh
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 0</i>
+            <i class="fa fa-comment-alt"> 1</i>
+          </div>
+        </div>
+        <div class="new__block__item col-sm-6">
+          <div class="item__img">
+            <img src="img/dienanh2.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ
+              Pinocchio
+            </h1>
+            <p>
+              Không chỉ chuyển tải được giá trị của tác phẩm gốc, “Cậu Bé
+              Người Gỗ Pinocchio” của năm 2020 còn thành công chinh phục
+              thế hệ khán giả hiện đại với một trải nghiệm điện ảnh đầy
+              sắc màu nhưng cũng vô cùng mới lạ. Cùng
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 627</i>
+            <i class="fa fa-comment-alt"> 127</i>
+          </div>
+        </div>
+      </div>
+      <div class="news__block__list row">
+        <div class="new__block__item col-sm-4">
+          <div class="item__img">
+            <img src="img/dienanh3.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              TENET công bố ngày khởi chiếu chính thức tại Việt Nam
+            </h1>
+            <p>
+              Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra
+              thông báo chính thức về ngày khởi chiếu cho bom tấn TENET
+              tại các thị trường bên
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 100</i>
+            <i class="fa fa-comment-alt"> 50</i>
+          </div>
+        </div>
+        <div class="new__block__item col-sm-4">
+          <div class="item__img">
+            <img src="img/dienanh4.jpg" />
+          </div>
+          <div class="item__content">
+            <h1>
+              Khi phụ nữ không còn ở thế trốn chạy của nạn nhân
+            </h1>
+            <p>
+              Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô
+              Hình mang đến một góc nhìn mới về hình ảnh những người phụ
+              nữ thời hiện đại. Điều đó được
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 100</i>
+            <i class="fa fa-comment-alt"> 50</i>
+          </div>
+        </div>
+        <div class="new__block__item__small col-sm-4">
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall1.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall2.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Diễn viên đặc biệt của Bằng Chứng Vô Hình</p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall3.png" />
+            </div>
+            <div class="item__small__content">
+              <p>
+                Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!
+              </p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall4.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news__block__list row">
+        <div class="new__block__item col-sm-6">
+          <div class="item__img">
+            <img src="img/dienanh1.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm
+              Chiêu
+            </h1>
+            <p>
+              Sau khi tiết lộ nhân tố đầu tiên là NSND Lê Khanh sẽ tiếp
+              tục tham gia phần tiếp theo của Gái già lắm chiêu với mái
+              tóc được cắt ngắn đầy mạnh mẽ và nam tính. Kaity Nguyễn sẽ
+              là mỹ nhân tiếp theo nối gót hai đàn chị là Diễm My 9X và
+              Ninh
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 0</i>
+            <i class="fa fa-comment-alt"> 1</i>
+          </div>
+        </div>
+        <div class="new__block__item col-sm-6">
+          <div class="item__img">
+            <img src="img/dienanh2.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ
+              Pinocchio
+            </h1>
+            <p>
+              Không chỉ chuyển tải được giá trị của tác phẩm gốc, “Cậu Bé
+              Người Gỗ Pinocchio” của năm 2020 còn thành công chinh phục
+              thế hệ khán giả hiện đại với một trải nghiệm điện ảnh đầy
+              sắc màu nhưng cũng vô cùng mới lạ. Cùng
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 627</i>
+            <i class="fa fa-comment-alt"> 127</i>
+          </div>
+        </div>
+      </div>
+      <div class="news__block__list row">
+        <div class="new__block__item col-sm-4">
+          <div class="item__img">
+            <img src="img/dienanh3.png" />
+          </div>
+          <div class="item__content">
+            <h1>
+              TENET công bố ngày khởi chiếu chính thức tại Việt Nam
+            </h1>
+            <p>
+              Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra
+              thông báo chính thức về ngày khởi chiếu cho bom tấn TENET
+              tại các thị trường bên
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 100</i>
+            <i class="fa fa-comment-alt"> 50</i>
+          </div>
+        </div>
+        <div class="new__block__item col-sm-4">
+          <div class="item__img">
+            <img src="img/dienanh4.jpg" />
+          </div>
+          <div class="item__content">
+            <h1>
+              Khi phụ nữ không còn ở thế trốn chạy của nạn nhân
+            </h1>
+            <p>
+              Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô
+              Hình mang đến một góc nhìn mới về hình ảnh những người phụ
+              nữ thời hiện đại. Điều đó được
+            </p>
+          </div>
+          <div class="item__icon">
+            <i class="fa fa-thumbs-up"> 100</i>
+            <i class="fa fa-comment-alt"> 50</i>
+          </div>
+        </div>
+        <div class="new__block__item__small col-sm-4">
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall1.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall2.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Diễn viên đặc biệt của Bằng Chứng Vô Hình</p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall3.png" />
+            </div>
+            <div class="item__small__content">
+              <p>
+                Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!
+              </p>
+            </div>
+          </div>
+          <div class="item__small">
+            <div class="item__small__img">
+              <img src="./img/dienanhsmall4.png" />
+            </div>
+            <div class="item__small__content">
+              <p>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn-xemthem" onclick="btnXemThem('800')">
+    xem thêm
+  </button>
+</section>

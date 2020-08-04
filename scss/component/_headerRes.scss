@@ -1,0 +1,40 @@
+.header{
+    .btn__open__header{
+        position: absolute;
+        right:20px;
+        font-size:30px;
+        cursor: pointer;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        background-color: $paper;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        a {
+            padding: 20px;
+            text-decoration: none;
+            font-size: $h6;
+            color: $textPrimary;
+            display: block;
+            transition: 0.3s;
+          }
+          
+          .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+          }
+      }
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+}

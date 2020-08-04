@@ -1,0 +1,130 @@
+.tab-pane {
+  position: relative;
+  .showingReviewer {
+    .detailReviewer {
+      max-width: 810px;
+      margin: auto;
+      .inputReviewer {
+        max-width: 580px;
+        margin: auto;
+        position: relative;
+        .inputRW {
+          appearance: none;
+          width: 100%;
+          height: 60px;
+          @include Button($paper, 1px solid #e8e8e9, 10px 10px 10px 25px, 4px);
+          color: $textLightGrey;
+          font-size: $subtitle;
+          outline: none;
+          cursor: pointer;
+        }
+        .imgReviewStar {
+          position: absolute;
+          top: 30%;
+          right: 6%;
+        }
+      }
+    }
+    #showingReviewer_listcmt {
+      max-height: 600px;
+      overflow: hidden;
+      transition: 0.5s;
+      .listComment {
+        border: 1px solid #e6e6e6;
+        border-bottom: none;
+        border-radius: 3px;
+        margin: auto;
+        margin-top: spacing(2);
+        background-color: #fff;
+        max-width: 550px;
+        padding: 20px 20px 12px;
+        .mainInfo {
+          margin: 0;
+          position: relative;
+          width: 100%;
+          .infoReviewer {
+            float: left;
+            color: black;
+            .infoReviewerIcon {
+              float: left;
+              img {
+                width: 32px;
+              }
+            }
+            .infoReviewerName {
+              margin-left: 10px;
+              font-size: $subtitle;
+              display: inline-block;
+              p {
+                font-size: $body1;
+                color: $textGrey;
+                margin: 0;
+              }
+            }
+          }
+          .infoStar {
+            position: absolute;
+            right: 10px;
+            color: #000;
+            top: 50%;
+            transform: translateY(-50%);
+            p {
+              margin: 0;
+              text-align: center;
+              color: $textGreenLight;
+            }
+            .star {
+              margin-top: -5px;
+              i {
+                font-size: 8px;
+                margin: 0 -2px;
+                color: $textRedOrange;
+              }
+            }
+          }
+        }
+        .mainComment {
+          margin: 0;
+
+          .CommentContent {
+            padding: 20px 0;
+            color: $textGrey;
+            font-size: $body2;
+            text-align: justify;
+          }
+        }
+        .like {
+          margin: 0;
+          .like__items {
+            width: 100%;
+            border-top: 1px solid #e6e6e6;
+            padding-top: 10px;
+            img {
+              width: $h6;
+            }
+            span {
+              margin-left: spacing(1);
+              color: $textGrey;
+              font-size: $subtitle;
+            }
+          }
+        }
+      }
+    }
+  }
+  .btn__seeMore {
+    position: absolute;
+    left: 50%;
+    bottom: -80px;
+    transform: translateX(-50%);
+    @include Button(transparent, 1px solid #949494, 7px 25px, 4px);
+    color: $textGrey;
+    font-size: $subtitle;
+    transition: 0.5s;
+  }
+  .btn__seeMore:hover {
+    background: $redOrange;
+    border-color: $redOrange;
+    color: $textWhite;
+  }
+}

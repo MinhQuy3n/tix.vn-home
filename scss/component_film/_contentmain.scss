@@ -1,0 +1,117 @@
+.max-width {
+  max-width: 980px;
+  margin: auto;
+  clear: both;
+}
+.contentmain {
+  color: $textWhite;
+  .nav {
+    display: flex;
+    justify-content: center;
+    border: none;
+    outline: none;
+    .nav-item {
+      .nav-link {
+        background: transparent;
+        color: $textWhite;
+        font-size: $h6;
+        transition: 0.5s;
+        font-weight: $fwRegular;
+        border: none;
+      }
+
+      .active {
+        color: $textRedOrange;
+        font-size: $h4 !important;
+        margin-bottom: spacing(3);
+        border: none;
+      }
+      .nav-link:hover {
+        font-size: $h4;
+        border: none;
+      }
+    }
+  }
+  .detailMainStyle {
+    margin: 0;
+    .film__left {
+      .film__left__info {
+        font-size: $subtitle;
+        margin-bottom: spacing(1);
+        .contentTitle {
+          width: 65%;
+          display: flex;
+          justify-content: flex-end;
+        }
+        .contentInfo {
+          width: 35%;
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+    .film__right {
+      padding-left: spacing(3);
+      font-size: $subtitle;
+      .film__right__content {
+        text-align: justify;
+      }
+    }
+  }
+  .newsMoreHot {
+    margin: 0;
+    .contentTitleFull {
+      width: 100%;
+      float: left;
+      font-size: 14px;
+      padding-left: 7px;
+      padding-right: 7px;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    .newsMoreHot__items {
+      padding: 0;
+      .newsMoreHot__content {
+        a {
+          cursor: pointer;
+          text-decoration: none;
+          .content__img {
+            img {
+              width: 100%;
+            }
+          }
+          .content__title {
+            cursor: pointer;
+            font-size: 16px;
+            padding: 0;
+            line-height: 26px;
+            margin-bottom: 8px;
+            height: 50px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-top: spacing(2);
+            p {
+              color: $textWhite;
+              transition: all 0.5s;
+            }
+            p:hover {
+              color: $textRedOrange;
+            }
+          }
+        }
+      }
+    }
+    .blockIcon {
+      display: flex;
+      align-items: center;
+      font-size: $body2;
+      line-height: 20px;
+      .icon {
+        margin-right: 20px;
+        img {
+          width: 16px;
+        }
+      }
+    }
+  }
+}

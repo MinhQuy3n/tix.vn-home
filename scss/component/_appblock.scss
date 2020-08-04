@@ -1,0 +1,73 @@
+.appblock {
+  width: 100%;
+  background: url("../../img/backapp.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: spacing(12) spacing(8);
+  .homeapp {
+    color: $textWhite;
+    .homeapp__detail {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      p:first-child {
+        font-size: xx-large;
+        font-weight: $fwBold;
+        margin-bottom: spacing(3);
+      }
+      p:nth-child(2) {
+        font-size: $h6;
+      }
+      .btn__App {
+        width: 300px;
+        text-align: center;
+        cursor: pointer;
+        @include Button(
+          $redOrange,
+          1px solid transparent,
+          spacing(1) spacing(2),
+          4px
+        );
+      }
+      p:last-child {
+        margin-top: spacing(2);
+        font-size: $subtitle;
+        span {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+    .homeapp__app {
+        display: flex;
+        justify-content: center;
+      .autoplay {
+        width: 200px;
+        height: 400px;
+        .single-item__img {
+          img {
+            width: 200px;
+            height: 400px;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width:993px){
+    .homeapp {
+      display: flex;
+      justify-content: center;
+      p:first-child {
+        max-width:500px;
+      }
+      .homeapp__app {
+        width: 65%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        max-height: 400px;
+      }
+    }
+  }
+}

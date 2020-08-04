@@ -1,0 +1,126 @@
+.newsblock {
+  padding-top: spacing(12);
+  background: url(../../img/back-news.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  .nav {
+    display: flex;
+    justify-content: center;
+    border: none;
+    .nav-item {
+      .nav-link {
+        background: transparent;
+        color: $textPrimary;
+        font-size: $h4;
+        transition: 0.5s;
+        font-weight: $fwRegular;
+      }
+
+      .active {
+        color: $textRedOrange;
+        font-size: $h4 + 4px !important;
+        border: none;
+        outline: none;
+      }
+      .nav-link:hover {
+        font-size: $h4 + 4px;
+        border: none;
+      }
+    }
+  }
+  .tab-content{
+    max-height:800px;
+    overflow: hidden;
+    transition:0.5s;
+    .news__block__list {
+      margin-bottom: spacing(3);
+      .new__block__item {
+        .item__img {
+          width: 100%;
+          cursor: pointer;
+
+          img {
+            width: 100%;
+            border-radius: 10px;
+          }
+        }
+        .item__content {
+          h1 {
+            font-size: $h6;
+            font-weight: $fwBold;
+            margin: spacing(1) 0;
+            cursor: pointer;
+            transition: .5s;
+          }
+          h1:hover{
+            color:$textRedOrange;
+          }
+          p {
+            font-size: $body2 + 1px;
+            margin-bottom: spacing(2);
+            color: $textGrey;
+          }
+        }
+        .item__icon {
+          color: $textGrey;
+          display: flex;
+          align-items: center;
+          i {
+            margin-right: spacing(2);
+          }
+        }
+      }
+      .new__block__item__small {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .item__small {
+          display: flex;
+          align-items: center;
+          margin-bottom: spacing(2);
+  
+          &__img {
+            width: 20%;
+            cursor: pointer;
+            img {
+              width: 100%;
+              border-radius: 4px;
+            }
+          }
+          &__content {
+            width: 80%;
+            padding-left: spacing(1);
+            p {
+              margin: 0;
+              font-size: $subtitle;
+              cursor: pointer;
+              transition:.5s;
+            }
+            p:hover{
+              color:$textRedOrange;
+            }
+          }
+        }
+      }
+    }
+  }
+  .btn-xemthem{
+    position: relative;
+    bottom: 0;
+    left:50%;
+    margin:spacing(3.5) 0;
+    font-size:$subtitle;
+    color:$textGrey;
+    text-transform: UPPERCASE;
+    letter-spacing:0.5px;
+    transition:.5s;
+    outline:none;
+    @include Button($paper, 1px solid $grey, spacing(0.7) spacing(2.5), 4px );
+    }
+    .btn-xemthem:hover{
+      background:$redOrange;
+      color:$textWhite;
+      border:1px solid transparent;
+    }
+ 
+}

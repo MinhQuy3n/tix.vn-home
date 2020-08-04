@@ -1,0 +1,130 @@
+.detailmain {
+  width: 100%;
+  background: rgb(10, 32, 41);
+  background-repeat: no-repeat;
+  margin-top: spacing(6);
+  padding-bottom:120px;
+  position: relative;
+  .detailmaintop {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    .posterLandscapeFilm {
+      filter: blur(15px);
+    }
+    .overlay {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      height: 100%;
+      background: linear-gradient(to top, rgb(10, 32, 41), transparent 100%);
+    }
+    .detailmain__info {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 5;
+      width: 70%;
+      .film__poster__top{
+        img{
+          width:100%;
+        }
+      }
+      .film__poster__detail {
+        color: $textWhite;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        span {
+          font-size: $subtitle;
+        }
+        p:nth-child(2){
+          font-size:$h4 +4px;
+          margin-bottom:spacing(1);
+          span {
+            font-size:$h4;
+
+            margin-right: spacing(.5);
+            @include Button(
+              $redOrange,
+              1px solid transparent,
+              0 spacing(1),
+              4px
+            );
+          }
+        }
+        p:last-child{
+            font-size:$subtitle;
+        }
+      }
+      .circleStar {
+        display:flex;
+          flex-direction: column;
+          justify-content: center;
+        .percent {
+          max-width: 150px;
+          position: relative;
+          svg {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            z-index: 1000;
+            circle {
+              width: 100%;
+              height: 100%;
+              fill: none;
+              stroke: rgb(39, 39, 39);
+              stroke-width: 10;
+              stroke-linecap: round;
+              transform: translate(5px, 5px);
+            }
+            circle:nth-child(2) {
+              stroke-dasharray: 165;
+              stroke-dashoffset: 0;
+              stroke: #00ff43;
+            }
+          }
+          span {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: $h1;
+            color: $textWhite;
+            z-index: 101;
+          }
+          .starmain {
+            display: flex;
+            justify-content: center;
+            margin:  spacing(2) 0 spacing(1) 0 ;
+            i {
+              color: $textRedOrange;
+              font-size: $h4;
+              margin: 0 spacing(0.1);
+            }
+            
+          }
+          p {
+            color:$colorWhiteDark;
+            font-size: $body2;
+            text-align:center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}

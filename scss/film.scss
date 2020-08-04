@@ -1,0 +1,19 @@
+* {
+    font-family: "Merriweather", serif;
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Roboto+Condensed:wght@300;400;700&display=swap");
+  @import "./theme/theme";
+  @import "./helpers/function";
+  @import "./helpers/mixin";
+  @import "./component/header";
+  @import "./component/headerRes";
+  @import "./component/footer1";
+  @import "./component/footer2";
+  @import "./component/overlay";
+
+  @import "./component_film/detailmain";
+  @import "./component_film/contentmain";
+  @import "./component_film/showingReviewer";
+
+
+  

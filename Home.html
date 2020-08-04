@@ -58,17 +58,7 @@
           <a class="navbar-brand" href="#">
             <img src="./img/tix-logo.png" />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          
         </div>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
@@ -125,21 +115,34 @@
             </li>
           </ul>
         </div>
+        <span class="btn__open__header" onclick="openNav()">&#9776;</span>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Lịch Chiếu</a>
+        <a href="#">Cụm Rạp</a>
+        <a href="#">Tin Tức</a>
+        <a href="#">Ứng Dụng</a>
+
+        <a href="#">Hồ Chí Minh</a>
+        <a href="#">Đăng Xuất</a>
+
+      </div>
       </nav>
+      
     </header>
     <section class="slider">
       <div class="single-item">
         <div>
-          <a href=""><img src="./img/Movie1.jpg" /></a>
+          <a href="#"><img src="./img/Movie1.jpg" /></a>
         </div>
         <div>
-          <a href=""><img src="./img/Movie2.jpg" /></a>
+          <a href="#"><img src="./img/Movie2.jpg" /></a>
         </div>
         <div>
-          <a href=""><img src="./img/Movie3.jpg" /></a>
+          <a href="#"><img src="./img/Movie3.jpg" /></a>
         </div>
         <div>
-          <a href=""><img src="./img/Movie4.jpg" /></a>
+          <a href="#"><img src="./img/Movie4.jpg" /></a>
         </div>
       </div>
       <div class="homeTools">
@@ -250,7 +253,7 @@
           >
             <div class="owl-carousel owl-theme">
               <div class="film-list row">
-                <div class="item col-xl-3">
+                <div class="item col-md-6 col-lg-4 col-xl-3 ">
                   <div class="filmblock__item">
                     <div class="film__img_1">
                       <img src="./img/film_type_1.png" class="flimtype1" />
@@ -283,7 +286,7 @@
                     <button id="buySticker">Mua vé</button>
                   </div>
                 </div>
-                <div class="item col-xl-3">
+                <div class="item col-md-6 col-lg-4 col-xl-3 ">
                   <div class="filmblock__item">
                     <div class="film__img_2">
                       <img src="./img/film_type_3.png" class="flimtype1" />
@@ -316,7 +319,7 @@
                     <button id="buySticker">Mua vé</button>
                   </div>
                 </div>
-                <div class="item col-xl-3">
+                <div class="item col-md-6 col-lg-4 col-xl-3" >
                   <div class="filmblock__item">
                     <div class="film__img_3">
                       <div class="overlay"></div>
@@ -346,9 +349,9 @@
                       </div>
                     </div>
                     <button id="buySticker">Mua vé</button>
-                  </div>
+                    </div>
                 </div>
-                <div class="item col-xl-3">
+                <div class="item col-md-6 col-lg-4 col-xl-3">
                   <div class="filmblock__item">
                     <div class="film__img_4">
                       <div class="overlay"></div>
@@ -379,7 +382,7 @@
                     <button id="buySticker">Mua vé</button>
                   </div>
                 </div>
-                <div class="item col-xl-3">
+                <div class="item col-md-6 col-lg-4 col-xl-3">
                   <div class="filmblock__item">
                     <div class="film__img_1">
                       <img src="./img/film_type_1.png" class="flimtype1" />
@@ -412,7 +415,7 @@
                     <button id="buySticker">Mua vé</button>
                   </div>
                 </div>
-                <div class="item col-xl-3">
+                <div class="item col-md-6 col-lg-4 col-xl-3">
                   <div class="filmblock__item">
                     <div class="film__img_2">
                       <img src="./img/film_type_3.png" class="flimtype1" />
@@ -445,7 +448,7 @@
                     <button id="buySticker">Mua vé</button>
                   </div>
                 </div>
-                <div class="item col-xl-3">
+                <div class="item  col-md-6 col-lg-4 col-xl-3">
                   <div class="filmblock__item">
                     <div class="film__img_3">
                       <div class="overlay"></div>
@@ -477,7 +480,7 @@
                     <button id="buySticker">Mua vé</button>
                   </div>
                 </div>
-                <div class="item col-xl-3">
+                <div class="item col-md-6 col-lg-4 col-xl-3">
                   <div class="filmblock__item">
                     <div class="film__img_4">
                       <div class="overlay"></div>
@@ -510,7 +513,7 @@
                 </div>
               </div>
               <div class="film-list row">
-                <div class="item col-xl-3">
+                <div class="item col-md-6 col-lg-4 col-xl-3 ">
                   <div class="filmblock__item">
                     <div class="film__img_1">
                       <img src="./img/film_type_1.png" class="flimtype1" />
@@ -543,7 +546,7 @@
                     <button id="buySticker">Mua vé</button>
                   </div>
                 </div>
-                <div class="item col-xl-3">
+                <div class="item col-md-6 col-lg-4 col-xl-3 ">
                   <div class="filmblock__item">
                     <div class="film__img_2">
                       <img src="./img/film_type_3.png" class="flimtype1" />
@@ -576,7 +579,7 @@
                     <button id="buySticker">Mua vé</button>
                   </div>
                 </div>
-                <div class="item col-xl-3">
+                <div class="item col-md-6 col-lg-4 col-xl-3" >
                   <div class="filmblock__item">
                     <div class="film__img_3">
                       <div class="overlay"></div>
@@ -606,9 +609,9 @@
                       </div>
                     </div>
                     <button id="buySticker">Mua vé</button>
-                  </div>
+                    </div>
                 </div>
-                <div class="item col-xl-3">
+                <div class="item col-md-6 col-lg-4 col-xl-3">
                   <div class="filmblock__item">
                     <div class="film__img_4">
                       <div class="overlay"></div>
@@ -639,7 +642,7 @@
                     <button id="buySticker">Mua vé</button>
                   </div>
                 </div>
-                <div class="item col-xl-3">
+                <div class="item col-md-6 col-lg-4 col-xl-3">
                   <div class="filmblock__item">
                     <div class="film__img_1">
                       <img src="./img/film_type_1.png" class="flimtype1" />
@@ -672,7 +675,7 @@
                     <button id="buySticker">Mua vé</button>
                   </div>
                 </div>
-                <div class="item col-xl-3">
+                <div class="item col-md-6 col-lg-4 col-xl-3">
                   <div class="filmblock__item">
                     <div class="film__img_2">
                       <img src="./img/film_type_3.png" class="flimtype1" />
@@ -705,7 +708,7 @@
                     <button id="buySticker">Mua vé</button>
                   </div>
                 </div>
-                <div class="item col-xl-3">
+                <div class="item  col-md-6 col-lg-4 col-xl-3">
                   <div class="filmblock__item">
                     <div class="film__img_3">
                       <div class="overlay"></div>
@@ -737,7 +740,7 @@
                     <button id="buySticker">Mua vé</button>
                   </div>
                 </div>
-                <div class="item col-xl-3">
+                <div class="item col-md-6 col-lg-4 col-xl-3">
                   <div class="filmblock__item">
                     <div class="film__img_4">
                       <div class="overlay"></div>
@@ -770,14 +773,16 @@
                 </div>
               </div>
               <div class="film-list row">
-                <div class="item col-xl-3">
+                <div class="item col-md-6 col-lg-4 col-xl-3">
                   <div class="filmblock__item">
-                    <div class="film__img_4">
+                    <div class="film__img_2">
+                      <img src="./img/film_type_3.png" class="flimtype1" />
                       <div class="overlay"></div>
                       <div class="rate">
                         <span>
-                          8.0
+                          9.5
                           <div class="star">
+                            <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -791,17 +796,17 @@
                     </div>
                     <div class="film__detail">
                       <div class="namefilm">
-                        <span class="btn-red">C18</span>
-                        Đỉnh Mù Sương - Foggy Mountain - (C18)
+                        <span class="btn-green">P</span>
+                        Cậu Bé Người Gỗ Pinocchio-Pinocchio-(P)
                       </div>
                       <div class="infofilm">
-                        110 phút
+                        130 phút
                       </div>
                     </div>
                     <button id="buySticker">Mua vé</button>
                   </div>
                 </div>
-                <div class="item col-xl-3">
+                <div class="item  col-md-6 col-lg-4 col-xl-3">
                   <div class="filmblock__item">
                     <div class="film__img_3">
                       <div class="overlay"></div>
@@ -825,6 +830,37 @@
                       <div class="namefilm">
                         <span class="btn-red">C16</span>
                         Chuyến Du Lịch Chết Chóc-Outback - (C16)
+                      </div>
+                      <div class="infofilm">
+                        110 phút
+                      </div>
+                    </div>
+                    <button id="buySticker">Mua vé</button>
+                  </div>
+                </div>
+                <div class="item col-md-6 col-lg-4 col-xl-3">
+                  <div class="filmblock__item">
+                    <div class="film__img_4">
+                      <div class="overlay"></div>
+                      <div class="rate">
+                        <span>
+                          8.0
+                          <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </span>
+                      </div>
+                      <span class="btn-play">
+                        <i class="fa fa-play"></i>
+                      </span>
+                    </div>
+                    <div class="film__detail">
+                      <div class="namefilm">
+                        <span class="btn-red">C18</span>
+                        Đỉnh Mù Sương - Foggy Mountain - (C18)
                       </div>
                       <div class="infofilm">
                         110 phút
@@ -1103,15 +1139,51 @@
                   </div>
                 </div>
               </div>
+              
               <div class="film-list row">
                 <div class="item col-xl-3">
                   <div class="filmblock__item">
-                    <div class="film__img_4">
+                    <div class="film__img_1">
+                      <img src="./img/film_type_1.png" class="flimtype1" />
                       <div class="overlay"></div>
                       <div class="rate">
                         <span>
-                          8.0
+                          8.5
                           <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                          </div>
+                        </span>
+                      </div>
+                      <span class="btn-play">
+                        <i class="fa fa-play"></i>
+                      </span>
+                    </div>
+                    <div class="film__detail">
+                      <div class="namefilm">
+                        <span class="btn-red">C18</span>
+                        Bán Đảo-Peninsula - (C18)
+                      </div>
+                      <div class="infofilm">
+                        116 phút
+                      </div>
+                    </div>
+                    <button id="buySticker">Mua vé</button>
+                  </div>
+                </div>
+                <div class="item col-xl-3">
+                  <div class="filmblock__item">
+                    <div class="film__img_2">
+                      <img src="./img/film_type_3.png" class="flimtype1" />
+                      <div class="overlay"></div>
+                      <div class="rate">
+                        <span>
+                          9.5
+                          <div class="star">
+                            <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -1125,11 +1197,11 @@
                     </div>
                     <div class="film__detail">
                       <div class="namefilm">
-                        <span class="btn-red">C18</span>
-                        Đỉnh Mù Sương - Foggy Mountain - (C18)
+                        <span class="btn-green">P</span>
+                        Cậu Bé Người Gỗ Pinocchio-Pinocchio-(P)
                       </div>
                       <div class="infofilm">
-                        110 phút
+                        130 phút
                       </div>
                     </div>
                     <button id="buySticker">Mua vé</button>
@@ -1167,44 +1239,2052 @@
                     <button id="buySticker">Mua vé</button>
                   </div>
                 </div>
+                <div class="item col-xl-3">
+                  <div class="filmblock__item">
+                    <div class="film__img_4">
+                      <div class="overlay"></div>
+                      <div class="rate">
+                        <span>
+                          8.0
+                          <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </span>
+                      </div>
+                      <span class="btn-play">
+                        <i class="fa fa-play"></i>
+                      </span>
+                    </div>
+                    <div class="film__detail">
+                      <div class="namefilm">
+                        <span class="btn-red">C18</span>
+                        Đỉnh Mù Sương - Foggy Mountain - (C18)
+                      </div>
+                      <div class="infofilm">
+                        110 phút
+                      </div>
+                    </div>
+                    <button id="buySticker">Mua vé</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!--END MAIN-CONTAINER-->
-      <section class="cinema">
+      <section class="cinemablock">
         <div class="cinemalist row">
-          <div class="cinemalist__brand col-xl-2">
-            <div class="cinema__logo"><img src="./img/logo_cgv.png" id="defaultOpen" onclick="openCinemaList('Cgv'),openFilmList('Cgv-flim')" />            </div>
-            <div class="cinema__logo"><img src="./img/logo_doine.jpg" onclick="openCinemaList('Doine'),openFilmList('Doine-flim')" /></div>
-            <div class="cinema__logo"><img src="./img/logo_lotte.png" /></div>
-            <div class="cinema__logo"><img src="./img/logo_mega.png" /></div>
+          <div class="cinemalist__brand col-md-2">
+            <div class="cinema__logo">
+              <img
+                src="./img/logo_cgv.png"
+                id="defaultOpen"
+                onclick="openCinemaList('Cgv'),openFilmList('Cgv-film')"
+              />
+            </div>
+            <div class="cinema__logo">
+              <img
+                src="./img/logo_doine.jpg"
+                onclick="openCinemaList('Doine'),openFilmList('Doine-film')"
+              />
+            </div>
+            <div class="cinema__logo">
+              <img
+                src="./img/logo_lotte.png"
+                onclick="openCinemaList('Lotte'),openFilmList('Lotte-film',)"
+              />
+            </div>
+            <div class="cinema__logo">
+              <img
+                src="./img/logo_mega.png"
+                onclick="openCinemaList('Mega'),openFilmList('Mega-film')"
+              />
+            </div>
+            <div class="cinema__logo">
+              <img
+                src="./img/logo_CNS.png"
+                onclick="openCinemaList('CNS'),openFilmList('CNS-film')"
+              />
+            </div>
           </div>
 
           <!--CINEMA LIST-->
-          <div id="Cgv" class="col-xl-4 cinema__list defaultOpen1 " >
-            <p onclick="openFilmList('Cgv-flim')">CGV</p>
-            <p onclick="openFilmList('Doine-flim')">HELLU</p>
+          <ul id="Cgv" class="col-md-4 cinema__list">
+            <li class="cinema active" onclick="openFilmList('Cgv-film')">
+              <div class="logo" id="defaultOpen1">
+                <img src="./img/cgv-thao-dien-pearl-15380174754715.jpg" />
+              </div>
+              <div class="cinema__detail">
+                <p><span class="colorCgv">CGV</span> -Vincom Gò Vấp</p>
+                <p>
+                  Tầng 5 TTTM Vincom Plaza Gò Vấp, 12 Phan Văn Trị, Phường 7,
+                  Quận Gò Vấp
+                </p>
+                <a href="#"> [Chi Tiết]</a>
+              </div>
+            </li>
+            <li class="cinema" onclick="openFilmList('CNS-film')">
+              <div class="logo" id="defaultOpen1">
+                <img src="./img/cgv-thao-dien-pearl-15380174754715.jpg" />
+              </div>
+              <div class="cinema__detail">
+                <p>
+                  <span class="colorCgv">CGV</span>- Vincom Center Landmark 81
+                </p>
+                <p>
+                  Tầng B1, TTTM Vincom Center Landmark 81, 772 Điện Biên Phủ,
+                  P.22, Q. Bình Thạnh, HCM
+                </p>
+                <a href="#"> [Chi Tiết]</a>
+              </div>
+            </li>
+            <li class="cinema" onclick="openFilmList('Lotte-film')">
+              <div class="logo" id="defaultOpen1">
+                <img src="./img/cgv-thao-dien-pearl-15380174754715.jpg" />
+              </div>
+              <div class="cinema__detail">
+                <p><span class="colorCgv">CGV</span>- Lý Chính Thắng</p>
+                <p>Tầng 3, 83 Lý Chính Thắng, Phường 8, Q.3, TP.HCM</p>
+                <a href="#"> [Chi Tiết]</a>
+              </div>
+            </li>
+            <li class="cinema" onclick="openFilmList('Doine-film')">
+              <div class="logo" id="defaultOpen1">
+                <img src="./img/cgv-thao-dien-pearl-15380174754715.jpg" />
+              </div>
+              <div class="cinema__detail">
+                <p><span class="colorCgv">CGV</span>- Lý Chính Thắng</p>
+                <p>Tầng 3, 83 Lý Chính Thắng, Phường 8, Q.3, TP.HCM</p>
+                <a href="#"> [Chi Tiết]</a>
+              </div>
+            </li>
+            <li class="cinema" onclick="openFilmList('Mega-film')">
+              <div class="logo" id="defaultOpen1">
+                <img src="./img/cgv-thao-dien-pearl-15380174754715.jpg" />
+              </div>
+              <div class="cinema__detail">
+                <p><span class="colorCgv">CGV</span>- Lý Chính Thắng</p>
+                <p>Tầng 3, 83 Lý Chính Thắng, Phường 8, Q.3, TP.HCM</p>
+                <a href="#"> [Chi Tiết]</a>
+              </div>
+            </li>
+          </ul>
+          <ul id="Doine" class="col-md-4 cinema__list">
+            <li class="cinema active" onclick="openFilmList('Doine-film')">
+              <div class="logo" id="defaultOpen1">
+                <img src="./img/logo_doine.jpg" />
+              </div>
+              <div class="cinema__detail">
+                <p><span>DCINE</span> -Bến Thành</p>
+                <p>6 Mạc Đĩnh Chi, Bến Nghé, Quận 1, Hồ Chí Minh</p>
+                <a href="#"> [Chi Tiết]</a>
+              </div>
+            </li>
+            <li class="cinema" onclick="openFilmList('CNS-film')">
+              <div class="logo" id="defaultOpen1">
+                <img src="./img/logo_doine.jpg" />
+              </div>
+              <div class="cinema__detail">
+                <p><span>DCINE</span> -Bến Thành</p>
+                <p>6 Mạc Đĩnh Chi, Bến Nghé, Quận 1, Hồ Chí Minh</p>
+                <a href="#"> [Chi Tiết]</a>
+              </div>
+            </li>
+          </ul>
+          <ul id="Lotte" class="col-md-4 cinema__list">
+            <li class="cinema active" onclick="openFilmList('Lotte-film')">
+              <div class="logo" id="defaultOpen1">
+                <img src="./img/lotte-cinema-go-vap-15383873960955.jpg" />
+              </div>
+              <div class="cinema__detail">
+                <p><span class="colorLotte">Lotte</span> - Gò Vấp</p>
+                <p>L3-Lotte Mart, 242 Nguyễn Văn Lượng, Gò Vấp</p>
+                <a href="#"> [Chi Tiết]</a>
+              </div>
+            </li>
+          </ul>
+          <ul id="Mega" class="col-md-4 cinema__list">
+            <li class="cinema active" onclick="openFilmList('Mega-film')">
+              <div class="logo" id="defaultOpen1">
+                <img src="./img/mega-gs-cao-thang-15380164745357.jpg" />
+              </div>
+              <div class="cinema__detail">
+                <p><span class="colorMega">Mega</span> - Cao Thắng</p>
+                <p>19 Cao Thắng, Q.3</p>
+                <a href="#"> [Chi Tiết]</a>
+              </div>
+            </li>
+            <li class="cinema" onclick="openFilmList('CNS-film')">
+              <div class="logo" id="defaultOpen1">
+                <img src="./img/mega-gs-cao-thang-15380164745357.jpg" />
+              </div>
+              <div class="cinema__detail">
+                <p><span class="colorMega">Mega</span> - Cao Thắng</p>
+                <p>19 Cao Thắng, Q.3</p>
+                <a href="#"> [Chi Tiết]</a>
+              </div>
+            </li>
+            <li class="cinema" onclick="openFilmList('Cgv-film')">
+              <div class="logo" id="defaultOpen1">
+                <img src="./img/mega-gs-cao-thang-15380164745357.jpg" />
+              </div>
+              <div class="cinema__detail">
+                <p><span class="colorMega">Mega</span> - Cao Thắng</p>
+                <p>19 Cao Thắng, Q.3</p>
+                <a href="#"> [Chi Tiết]</a>
+              </div>
+            </li>
+            <li class="cinema" onclick="openFilmList('Doine-film')">
+              <div class="logo" id="defaultOpen1">
+                <img src="./img/mega-gs-cao-thang-15380164745357.jpg" />
+              </div>
+              <div class="cinema__detail">
+                <p><span class="colorMega">Mega</span> - Cao Thắng</p>
+                <p>19 Cao Thắng, Q.3</p>
+                <a href="#"> [Chi Tiết]</a>
+              </div>
+            </li>
+            <li class="cinema">
+              <div class="logo" id="defaultOpen1">
+                <img src="./img/mega-gs-cao-thang-15380164745357.jpg" />
+              </div>
+              <div class="cinema__detail">
+                <p><span class="colorMega">Mega</span> - Cao Thắng</p>
+                <p>19 Cao Thắng, Q.3</p>
+                <a href="#"> [Chi Tiết]</a>
+              </div>
+            </li>
+          </ul>
+          <ul id="CNS" class="col-md-4 cinema__list">
+            <li class="cinema active" onclick="openFilmList('CNS-film')">
+              <div class="logo" id="defaultOpen1">
+                <img src="./img/cinestar-hai-ba-trung-15383833704033.jpg" />
+              </div>
+              <div class="cinema__detail">
+                <p><span class="colorCNS">CNS</span> - Hai Bà Trưng</p>
+                <p>135 Hai Bà Trưng, Bến Nghé, Q.1</p>
+                <a href="#"> [Chi Tiết]</a>
+              </div>
+            </li>
+            <li class="cinema" onclick="openFilmList('Cgv-film')">
+              <div class="logo" id="defaultOpen1">
+                <img src="./img/cinestar-hai-ba-trung-15383833704033.jpg" />
+              </div>
+              <div class="cinema__detail">
+                <p><span class="colorCNS">CNS</span> - Hai Bà Trưng</p>
+                <p>135 Hai Bà Trưng, Bến Nghé, Q.1</p>
+                <a href="#"> [Chi Tiết]</a>
+              </div>
+            </li>
+            <li class="cinema" onclick="openFilmList('Lotte-film')">
+              <div class="logo" id="defaultOpen1">
+                <img src="./img/cinestar-hai-ba-trung-15383833704033.jpg" />
+              </div>
+              <div class="cinema__detail">
+                <p><span class="colorCNS">CNS</span> - Hai Bà Trưng</p>
+                <p>135 Hai Bà Trưng, Bến Nghé, Q.1</p>
+                <a href="#"> [Chi Tiết]</a>
+              </div>
+            </li>
+            <li class="cinema" onclick="openFilmList('Mega-film')">
+              <div class="logo" id="defaultOpen1">
+                <img src="./img/cinestar-hai-ba-trung-15383833704033.jpg" />
+              </div>
+              <div class="cinema__detail">
+                <p><span class="colorCNS">CNS</span> - Hai Bà Trưng</p>
+                <p>135 Hai Bà Trưng, Bến Nghé, Q.1</p>
+                <a href="#"> [Chi Tiết]</a>
+              </div>
+            </li>
+          </ul>
+          <!-- END CINEMA LIST-->
 
+          <!--FILM LIST-->
+          <div id="Cgv-film" class="listflim col-md-6">
+            <div class="listflim__item">
+              <div class="film__title">
+                <div class="film__title__img">
+                  <img src="./img/bighero6.jpg" />
+                </div>
+                <div class="film__title__name">
+                  <p><span class="green">P</span> Big Hero 6</p>
+                  <p>102 phút - TIX 8.5 - IMDb 7.8</p>
+                </div>
+              </div>
+              <div class="film__detail">
+                <div class="version">2D Lồng Tiếng</div>
+                <div class="sessions">
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 14:00 </span> ~ 15:42
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 16:20 </span> ~ 18:02
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 18:40 </span> ~ 20:22
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="listflim__item">
+              <div class="film__title">
+                <div class="film__title__img">
+                  <img src="./img/bighero6.jpg" />
+                </div>
+                <div class="film__title__name">
+                  <p><span class="green">P</span> Big Hero 6</p>
+                  <p>102 phút - TIX 8.5 - IMDb 7.8</p>
+                </div>
+              </div>
+              <div class="film__detail">
+                <div class="version">2D Lồng Tiếng</div>
+                <div class="sessions">
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 14:00 </span> ~ 15:42
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 16:20 </span> ~ 18:02
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 18:40 </span> ~ 20:22
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="listflim__item">
+              <div class="film__title">
+                <div class="film__title__img">
+                  <img src="./img/bighero6.jpg" />
+                </div>
+                <div class="film__title__name">
+                  <p><span class="green">P</span> Big Hero 6</p>
+                  <p>102 phút - TIX 8.5 - IMDb 7.8</p>
+                </div>
+              </div>
+              <div class="film__detail">
+                <div class="version">2D Lồng Tiếng</div>
+                <div class="sessions">
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 14:00 </span> ~ 15:42
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 16:20 </span> ~ 18:02
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 18:40 </span> ~ 20:22
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="listflim__item">
+              <div class="film__title">
+                <div class="film__title__img">
+                  <img src="./img/bighero6.jpg" />
+                </div>
+                <div class="film__title__name">
+                  <p><span class="green">P</span> Big Hero 6</p>
+                  <p>102 phút - TIX 8.5 - IMDb 7.8</p>
+                </div>
+              </div>
+              <div class="film__detail">
+                <div class="version">2D Lồng Tiếng</div>
+                <div class="sessions">
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 14:00 </span> ~ 15:42
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 16:20 </span> ~ 18:02
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 18:40 </span> ~ 20:22
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="listflim__item">
+              <div class="film__title">
+                <div class="film__title__img">
+                  <img src="./img/bighero6.jpg" />
+                </div>
+                <div class="film__title__name">
+                  <p><span class="green">P</span> Big Hero 6</p>
+                  <p>102 phút - TIX 8.5 - IMDb 7.8</p>
+                </div>
+              </div>
+              <div class="film__detail">
+                <div class="version">2D Lồng Tiếng</div>
+                <div class="sessions">
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 14:00 </span> ~ 15:42
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 16:20 </span> ~ 18:02
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 18:40 </span> ~ 20:22
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="listflim__item">
+              <div class="film__title">
+                <div class="film__title__img">
+                  <img src="./img/bighero6.jpg" />
+                </div>
+                <div class="film__title__name">
+                  <p><span class="green">P</span> Big Hero 6</p>
+                  <p>102 phút - TIX 8.5 - IMDb 7.8</p>
+                </div>
+              </div>
+              <div class="film__detail">
+                <div class="version">2D Lồng Tiếng</div>
+                <div class="sessions">
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 14:00 </span> ~ 15:42
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 16:20 </span> ~ 18:02
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 18:40 </span> ~ 20:22
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div id="Doine" class="col-xl-4 cinema__list" >
-            <p onclick="openFilmList('Doine-flim')"> DOINE</p>
+          <div id="Doine-film" class="listflim col-md-6">
+            <div class="listflim__item">
+              <div class="film__title">
+                <div class="film__title__img">
+                  <img src="./img/bandao.png" />
+                </div>
+                <div class="film__title__name">
+                  <p><span class="red">C18</span> Bán Đảo - Peninsula -</p>
+                  <p>116 phút - TIX 8.5 - IMDb 0</p>
+                </div>
+              </div>
+              <div class="film__detail">
+                <div class="version">2D Digital</div>
+                <div class="sessions">
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 14:00 </span> ~ 15:42
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 16:20 </span> ~ 18:02
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 18:40 </span> ~ 20:22
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="listflim__item">
+              <div class="film__title">
+                <div class="film__title__img">
+                  <img src="./img/bandao.png" />
+                </div>
+                <div class="film__title__name">
+                  <p><span class="red">C18</span> Bán Đảo - Peninsula -</p>
+                  <p>116 phút - TIX 8.5 - IMDb 0</p>
+                </div>
+              </div>
+              <div class="film__detail">
+                <div class="version">2D Digital</div>
+                <div class="sessions">
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 14:00 </span> ~ 15:42
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 16:20 </span> ~ 18:02
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 18:40 </span> ~ 20:22
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="listflim__item">
+              <div class="film__title">
+                <div class="film__title__img">
+                  <img src="./img/bandao.png" />
+                </div>
+                <div class="film__title__name">
+                  <p><span class="red">C18</span> Bán Đảo - Peninsula -</p>
+                  <p>116 phút - TIX 8.5 - IMDb 0</p>
+                </div>
+              </div>
+              <div class="film__detail">
+                <div class="version">2D Digital</div>
+                <div class="sessions">
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 14:00 </span> ~ 15:42
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 16:20 </span> ~ 18:02
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 18:40 </span> ~ 20:22
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="listflim__item">
+              <div class="film__title">
+                <div class="film__title__img">
+                  <img src="./img/bandao.png" />
+                </div>
+                <div class="film__title__name">
+                  <p><span class="red">C18</span> Bán Đảo - Peninsula -</p>
+                  <p>116 phút - TIX 8.5 - IMDb 0</p>
+                </div>
+              </div>
+              <div class="film__detail">
+                <div class="version">2D Digital</div>
+                <div class="sessions">
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 14:00 </span> ~ 15:42
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 16:20 </span> ~ 18:02
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 18:40 </span> ~ 20:22
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-         <!-- END CINEMA LIST-->
-
-         <!--FILM LIST-->
-         <div id="Cgv-flim" class="listflim col-xl-6">
-           Phim ma
-         </div>
-         <div id="Doine-flim" class="listflim col-xl-6">
-           Phim gà
-         </div>
-         <!--END FILM LIST-->
-
+          <div id="Lotte-film" class="listflim col-md-6">
+            <div class="listflim__item">
+              <div class="film__title">
+                <div class="film__title__img">
+                  <img src="./img/pinochico.png" />
+                </div>
+                <div class="film__title__name">
+                  <p>
+                    <span class="green">P</span> Cậu Bé Người Gỗ Pinocchio -
+                    Pinocchio -
+                  </p>
+                  <p>116 phút - TIX 8.5 - IMDb 0</p>
+                </div>
+              </div>
+              <div class="film__detail">
+                <div class="version">2D Digital</div>
+                <div class="sessions">
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 14:00 </span> ~ 15:42
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 16:20 </span> ~ 18:02
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 18:40 </span> ~ 20:22
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="listflim__item">
+              <div class="film__title">
+                <div class="film__title__img">
+                  <img src="./img/pinochico.png" />
+                </div>
+                <div class="film__title__name">
+                  <p>
+                    <span class="green">P</span> Cậu Bé Người Gỗ Pinocchio -
+                    Pinocchio -
+                  </p>
+                  <p>116 phút - TIX 8.5 - IMDb 0</p>
+                </div>
+              </div>
+              <div class="film__detail">
+                <div class="version">2D Digital</div>
+                <div class="sessions">
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 14:00 </span> ~ 15:42
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 16:20 </span> ~ 18:02
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 18:40 </span> ~ 20:22
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="listflim__item">
+              <div class="film__title">
+                <div class="film__title__img">
+                  <img src="./img/pinochico.png" />
+                </div>
+                <div class="film__title__name">
+                  <p>
+                    <span class="green">P</span> Cậu Bé Người Gỗ Pinocchio -
+                    Pinocchio -
+                  </p>
+                  <p>116 phút - TIX 8.5 - IMDb 0</p>
+                </div>
+              </div>
+              <div class="film__detail">
+                <div class="version">2D Digital</div>
+                <div class="sessions">
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 14:00 </span> ~ 15:42
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 16:20 </span> ~ 18:02
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 18:40 </span> ~ 20:22
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="Mega-film" class="listflim col-md-6">
+            <div class="listflim__item">
+              <div class="film__title">
+                <div class="film__title__img">
+                  <img src="./img/godofwar.png" />
+                </div>
+                <div class="film__title__name">
+                  <p>
+                    <span class="red">18</span> Dinh Thự Oan Khuất - Ghost Of
+                    War -
+                  </p>
+                  <p>116 phút - TIX 8.5 - IMDb 0</p>
+                </div>
+              </div>
+              <div class="film__detail">
+                <div class="version">2D Digital</div>
+                <div class="sessions">
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 14:00 </span> ~ 15:42
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 16:20 </span> ~ 18:02
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 18:40 </span> ~ 20:22
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="CNS-film" class="listflim col-md-6">
+            <div class="listflim__item">
+              <div class="film__title">
+                <div class="film__title__img">
+                  <img src="./img/unhinged.png" />
+                </div>
+                <div class="film__title__name">
+                  <p><span class="red">18</span> Kẻ Cuồng Sát - Unhinged -</p>
+                  <p>116 phút - TIX 8.5 - IMDb 0</p>
+                </div>
+              </div>
+              <div class="film__detail">
+                <div class="version">2D Digital</div>
+                <div class="sessions">
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 14:00 </span> ~ 15:42
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 16:20 </span> ~ 18:02
+                  </a>
+                  <a href="#" class="s-session">
+                    <span class="s-start-time"> 18:40 </span> ~ 20:22
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--END FILM LIST-->
         </div>
       </section>
+      <section class="newsblock">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link active"
+              id="home-tab"
+              data-toggle="tab"
+              href="#dienanh"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true"
+              >Điện Ảnh 24h
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="profile-tab"
+              data-toggle="tab"
+              href="#review"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+              >Review</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="contact-tab"
+              data-toggle="tab"
+              href="#khuyenmai"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false"
+              >Khuyến Mãi</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="dienanh"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            <div class="news__block__list row">
+              <div class="new__block__item col-sm-6">
+                <div class="item__img">
+                  <img src="img/dienanh1.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm
+                    Chiêu
+                  </h1>
+                  <p>
+                    Sau khi tiết lộ nhân tố đầu tiên là NSND Lê Khanh sẽ tiếp
+                    tục tham gia phần tiếp theo của Gái già lắm chiêu với mái
+                    tóc được cắt ngắn đầy mạnh mẽ và nam tính. Kaity Nguyễn sẽ
+                    là mỹ nhân tiếp theo nối gót hai đàn chị là Diễm My 9X và
+                    Ninh
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 0</i>
+                  <i class="fa fa-comment-alt"> 1</i>
+                </div>
+              </div>
+              <div class="new__block__item col-sm-6">
+                <div class="item__img">
+                  <img src="img/dienanh2.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ
+                    Pinocchio
+                  </h1>
+                  <p>
+                    Không chỉ chuyển tải được giá trị của tác phẩm gốc, “Cậu Bé
+                    Người Gỗ Pinocchio” của năm 2020 còn thành công chinh phục
+                    thế hệ khán giả hiện đại với một trải nghiệm điện ảnh đầy
+                    sắc màu nhưng cũng vô cùng mới lạ. Cùng
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 627</i>
+                  <i class="fa fa-comment-alt"> 127</i>
+                </div>
+              </div>
+            </div>
+            <div class="news__block__list row">
+              <div class="new__block__item col-sm-4">
+                <div class="item__img">
+                  <img src="img/dienanh3.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    TENET công bố ngày khởi chiếu chính thức tại Việt Nam
+                  </h1>
+                  <p>
+                    Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra
+                    thông báo chính thức về ngày khởi chiếu cho bom tấn TENET
+                    tại các thị trường bên
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 100</i>
+                  <i class="fa fa-comment-alt"> 50</i>
+                </div>
+              </div>
+              <div class="new__block__item col-sm-4">
+                <div class="item__img">
+                  <img src="img/dienanh4.jpg" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    Khi phụ nữ không còn ở thế trốn chạy của nạn nhân
+                  </h1>
+                  <p>
+                    Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô
+                    Hình mang đến một góc nhìn mới về hình ảnh những người phụ
+                    nữ thời hiện đại. Điều đó được
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 100</i>
+                  <i class="fa fa-comment-alt"> 50</i>
+                </div>
+              </div>
+              <div class="new__block__item__small col-sm-4">
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall1.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall2.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Diễn viên đặc biệt của Bằng Chứng Vô Hình</p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall3.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>
+                      Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!
+                    </p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall4.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__block__list row">
+              <div class="new__block__item col-sm-6">
+                <div class="item__img">
+                  <img src="img/dienanh1.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm
+                    Chiêu
+                  </h1>
+                  <p>
+                    Sau khi tiết lộ nhân tố đầu tiên là NSND Lê Khanh sẽ tiếp
+                    tục tham gia phần tiếp theo của Gái già lắm chiêu với mái
+                    tóc được cắt ngắn đầy mạnh mẽ và nam tính. Kaity Nguyễn sẽ
+                    là mỹ nhân tiếp theo nối gót hai đàn chị là Diễm My 9X và
+                    Ninh
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 0</i>
+                  <i class="fa fa-comment-alt"> 1</i>
+                </div>
+              </div>
+              <div class="new__block__item col-sm-6">
+                <div class="item__img">
+                  <img src="img/dienanh2.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ
+                    Pinocchio
+                  </h1>
+                  <p>
+                    Không chỉ chuyển tải được giá trị của tác phẩm gốc, “Cậu Bé
+                    Người Gỗ Pinocchio” của năm 2020 còn thành công chinh phục
+                    thế hệ khán giả hiện đại với một trải nghiệm điện ảnh đầy
+                    sắc màu nhưng cũng vô cùng mới lạ. Cùng
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 627</i>
+                  <i class="fa fa-comment-alt"> 127</i>
+                </div>
+              </div>
+            </div>
+            <div class="news__block__list row">
+              <div class="new__block__item col-sm-4">
+                <div class="item__img">
+                  <img src="img/dienanh3.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    TENET công bố ngày khởi chiếu chính thức tại Việt Nam
+                  </h1>
+                  <p>
+                    Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra
+                    thông báo chính thức về ngày khởi chiếu cho bom tấn TENET
+                    tại các thị trường bên
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 100</i>
+                  <i class="fa fa-comment-alt"> 50</i>
+                </div>
+              </div>
+              <div class="new__block__item col-sm-4">
+                <div class="item__img">
+                  <img src="img/dienanh4.jpg" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    Khi phụ nữ không còn ở thế trốn chạy của nạn nhân
+                  </h1>
+                  <p>
+                    Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô
+                    Hình mang đến một góc nhìn mới về hình ảnh những người phụ
+                    nữ thời hiện đại. Điều đó được
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 100</i>
+                  <i class="fa fa-comment-alt"> 50</i>
+                </div>
+              </div>
+              <div class="new__block__item__small col-sm-4">
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall1.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall2.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Diễn viên đặc biệt của Bằng Chứng Vô Hình</p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall3.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>
+                      Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!
+                    </p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall4.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__block__list row">
+              <div class="new__block__item col-sm-6">
+                <div class="item__img">
+                  <img src="img/dienanh1.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm
+                    Chiêu
+                  </h1>
+                  <p>
+                    Sau khi tiết lộ nhân tố đầu tiên là NSND Lê Khanh sẽ tiếp
+                    tục tham gia phần tiếp theo của Gái già lắm chiêu với mái
+                    tóc được cắt ngắn đầy mạnh mẽ và nam tính. Kaity Nguyễn sẽ
+                    là mỹ nhân tiếp theo nối gót hai đàn chị là Diễm My 9X và
+                    Ninh
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 0</i>
+                  <i class="fa fa-comment-alt"> 1</i>
+                </div>
+              </div>
+              <div class="new__block__item col-sm-6">
+                <div class="item__img">
+                  <img src="img/dienanh2.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ
+                    Pinocchio
+                  </h1>
+                  <p>
+                    Không chỉ chuyển tải được giá trị của tác phẩm gốc, “Cậu Bé
+                    Người Gỗ Pinocchio” của năm 2020 còn thành công chinh phục
+                    thế hệ khán giả hiện đại với một trải nghiệm điện ảnh đầy
+                    sắc màu nhưng cũng vô cùng mới lạ. Cùng
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 627</i>
+                  <i class="fa fa-comment-alt"> 127</i>
+                </div>
+              </div>
+            </div>
+            <div class="news__block__list row">
+              <div class="new__block__item col-sm-4">
+                <div class="item__img">
+                  <img src="img/dienanh3.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    TENET công bố ngày khởi chiếu chính thức tại Việt Nam
+                  </h1>
+                  <p>
+                    Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra
+                    thông báo chính thức về ngày khởi chiếu cho bom tấn TENET
+                    tại các thị trường bên
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 100</i>
+                  <i class="fa fa-comment-alt"> 50</i>
+                </div>
+              </div>
+              <div class="new__block__item col-sm-4">
+                <div class="item__img">
+                  <img src="img/dienanh4.jpg" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    Khi phụ nữ không còn ở thế trốn chạy của nạn nhân
+                  </h1>
+                  <p>
+                    Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô
+                    Hình mang đến một góc nhìn mới về hình ảnh những người phụ
+                    nữ thời hiện đại. Điều đó được
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 100</i>
+                  <i class="fa fa-comment-alt"> 50</i>
+                </div>
+              </div>
+              <div class="new__block__item__small col-sm-4">
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall1.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall2.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Diễn viên đặc biệt của Bằng Chứng Vô Hình</p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall3.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>
+                      Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!
+                    </p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall4.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="review"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <div class="news__block__list row">
+              <div class="new__block__item col-sm-6">
+                <div class="item__img">
+                  <img src="img/dienanhrw1.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm
+                    Chiêu
+                  </h1>
+                  <p>
+                    Sau khi tiết lộ nhân tố đầu tiên là NSND Lê Khanh sẽ tiếp
+                    tục tham gia phần tiếp theo của Gái già lắm chiêu với mái
+                    tóc được cắt ngắn đầy mạnh mẽ và nam tính. Kaity Nguyễn sẽ
+                    là mỹ nhân tiếp theo nối gót hai đàn chị là Diễm My 9X và
+                    Ninh
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 0</i>
+                  <i class="fa fa-comment-alt"> 1</i>
+                </div>
+              </div>
+              <div class="new__block__item col-sm-6">
+                <div class="item__img">
+                  <img src="img/dienanhrw2.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ
+                    Pinocchio
+                  </h1>
+                  <p>
+                    Không chỉ chuyển tải được giá trị của tác phẩm gốc, “Cậu Bé
+                    Người Gỗ Pinocchio” của năm 2020 còn thành công chinh phục
+                    thế hệ khán giả hiện đại với một trải nghiệm điện ảnh đầy
+                    sắc màu nhưng cũng vô cùng mới lạ. Cùng
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 627</i>
+                  <i class="fa fa-comment-alt"> 127</i>
+                </div>
+              </div>
+            </div>
+            <div class="news__block__list row">
+              <div class="new__block__item col-sm-4">
+                <div class="item__img">
+                  <img src="img/dienanhrw4.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    TENET công bố ngày khởi chiếu chính thức tại Việt Nam
+                  </h1>
+                  <p>
+                    Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra
+                    thông báo chính thức về ngày khởi chiếu cho bom tấn TENET
+                    tại các thị trường bên
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 100</i>
+                  <i class="fa fa-comment-alt"> 50</i>
+                </div>
+              </div>
+              <div class="new__block__item col-sm-4">
+                <div class="item__img">
+                  <img src="img/dienanhrw5.jpg" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    Khi phụ nữ không còn ở thế trốn chạy của nạn nhân
+                  </h1>
+                  <p>
+                    Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô
+                    Hình mang đến một góc nhìn mới về hình ảnh những người phụ
+                    nữ thời hiện đại. Điều đó được
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 100</i>
+                  <i class="fa fa-comment-alt"> 50</i>
+                </div>
+              </div>
+              <div class="new__block__item__small col-sm-4">
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhrwsmall2.jpg" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhrwsmall3.jpg" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Diễn viên đặc biệt của Bằng Chứng Vô Hình</p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhrwsmall3.jpg" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>
+                      Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!
+                    </p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall4.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__block__list row">
+              <div class="new__block__item col-sm-6">
+                <div class="item__img">
+                  <img src="img/dienanhrw1.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm
+                    Chiêu
+                  </h1>
+                  <p>
+                    Sau khi tiết lộ nhân tố đầu tiên là NSND Lê Khanh sẽ tiếp
+                    tục tham gia phần tiếp theo của Gái già lắm chiêu với mái
+                    tóc được cắt ngắn đầy mạnh mẽ và nam tính. Kaity Nguyễn sẽ
+                    là mỹ nhân tiếp theo nối gót hai đàn chị là Diễm My 9X và
+                    Ninh
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 0</i>
+                  <i class="fa fa-comment-alt"> 1</i>
+                </div>
+              </div>
+              <div class="new__block__item col-sm-6">
+                <div class="item__img">
+                  <img src="img/dienanhrw2.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ
+                    Pinocchio
+                  </h1>
+                  <p>
+                    Không chỉ chuyển tải được giá trị của tác phẩm gốc, “Cậu Bé
+                    Người Gỗ Pinocchio” của năm 2020 còn thành công chinh phục
+                    thế hệ khán giả hiện đại với một trải nghiệm điện ảnh đầy
+                    sắc màu nhưng cũng vô cùng mới lạ. Cùng
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 627</i>
+                  <i class="fa fa-comment-alt"> 127</i>
+                </div>
+              </div>
+            </div>
+            <div class="news__block__list row">
+              <div class="new__block__item col-sm-4">
+                <div class="item__img">
+                  <img src="img/dienanhrw4.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    TENET công bố ngày khởi chiếu chính thức tại Việt Nam
+                  </h1>
+                  <p>
+                    Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra
+                    thông báo chính thức về ngày khởi chiếu cho bom tấn TENET
+                    tại các thị trường bên
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 100</i>
+                  <i class="fa fa-comment-alt"> 50</i>
+                </div>
+              </div>
+              <div class="new__block__item col-sm-4">
+                <div class="item__img">
+                  <img src="img/dienanhrw5.jpg" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    Khi phụ nữ không còn ở thế trốn chạy của nạn nhân
+                  </h1>
+                  <p>
+                    Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô
+                    Hình mang đến một góc nhìn mới về hình ảnh những người phụ
+                    nữ thời hiện đại. Điều đó được
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 100</i>
+                  <i class="fa fa-comment-alt"> 50</i>
+                </div>
+              </div>
+              <div class="new__block__item__small col-sm-4">
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhrwsmall2.jpg" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhrwsmall3.jpg" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Diễn viên đặc biệt của Bằng Chứng Vô Hình</p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhrwsmall3.jpg" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>
+                      Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!
+                    </p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall4.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__block__list row">
+              <div class="new__block__item col-sm-6">
+                <div class="item__img">
+                  <img src="img/dienanhrw1.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm
+                    Chiêu
+                  </h1>
+                  <p>
+                    Sau khi tiết lộ nhân tố đầu tiên là NSND Lê Khanh sẽ tiếp
+                    tục tham gia phần tiếp theo của Gái già lắm chiêu với mái
+                    tóc được cắt ngắn đầy mạnh mẽ và nam tính. Kaity Nguyễn sẽ
+                    là mỹ nhân tiếp theo nối gót hai đàn chị là Diễm My 9X và
+                    Ninh
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 0</i>
+                  <i class="fa fa-comment-alt"> 1</i>
+                </div>
+              </div>
+              <div class="new__block__item col-sm-6">
+                <div class="item__img">
+                  <img src="img/dienanhrw2.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ
+                    Pinocchio
+                  </h1>
+                  <p>
+                    Không chỉ chuyển tải được giá trị của tác phẩm gốc, “Cậu Bé
+                    Người Gỗ Pinocchio” của năm 2020 còn thành công chinh phục
+                    thế hệ khán giả hiện đại với một trải nghiệm điện ảnh đầy
+                    sắc màu nhưng cũng vô cùng mới lạ. Cùng
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 627</i>
+                  <i class="fa fa-comment-alt"> 127</i>
+                </div>
+              </div>
+            </div>
+            <div class="news__block__list row">
+              <div class="new__block__item col-sm-4">
+                <div class="item__img">
+                  <img src="img/dienanhrw4.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    TENET công bố ngày khởi chiếu chính thức tại Việt Nam
+                  </h1>
+                  <p>
+                    Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra
+                    thông báo chính thức về ngày khởi chiếu cho bom tấn TENET
+                    tại các thị trường bên
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 100</i>
+                  <i class="fa fa-comment-alt"> 50</i>
+                </div>
+              </div>
+              <div class="new__block__item col-sm-4">
+                <div class="item__img">
+                  <img src="img/dienanhrw5.jpg" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    Khi phụ nữ không còn ở thế trốn chạy của nạn nhân
+                  </h1>
+                  <p>
+                    Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô
+                    Hình mang đến một góc nhìn mới về hình ảnh những người phụ
+                    nữ thời hiện đại. Điều đó được
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 100</i>
+                  <i class="fa fa-comment-alt"> 50</i>
+                </div>
+              </div>
+              <div class="new__block__item__small col-sm-4">
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhrwsmall2.jpg" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhrwsmall3.jpg" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Diễn viên đặc biệt của Bằng Chứng Vô Hình</p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhrwsmall3.jpg" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>
+                      Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!
+                    </p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall4.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__block__list row">
+              <div class="new__block__item col-sm-6">
+                <div class="item__img">
+                  <img src="img/dienanhrw1.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm
+                    Chiêu
+                  </h1>
+                  <p>
+                    Sau khi tiết lộ nhân tố đầu tiên là NSND Lê Khanh sẽ tiếp
+                    tục tham gia phần tiếp theo của Gái già lắm chiêu với mái
+                    tóc được cắt ngắn đầy mạnh mẽ và nam tính. Kaity Nguyễn sẽ
+                    là mỹ nhân tiếp theo nối gót hai đàn chị là Diễm My 9X và
+                    Ninh
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 0</i>
+                  <i class="fa fa-comment-alt"> 1</i>
+                </div>
+              </div>
+              <div class="new__block__item col-sm-6">
+                <div class="item__img">
+                  <img src="img/dienanhrw2.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ
+                    Pinocchio
+                  </h1>
+                  <p>
+                    Không chỉ chuyển tải được giá trị của tác phẩm gốc, “Cậu Bé
+                    Người Gỗ Pinocchio” của năm 2020 còn thành công chinh phục
+                    thế hệ khán giả hiện đại với một trải nghiệm điện ảnh đầy
+                    sắc màu nhưng cũng vô cùng mới lạ. Cùng
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 627</i>
+                  <i class="fa fa-comment-alt"> 127</i>
+                </div>
+              </div>
+            </div>
+            <div class="news__block__list row">
+              <div class="new__block__item col-sm-4">
+                <div class="item__img">
+                  <img src="img/dienanhrw4.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    TENET công bố ngày khởi chiếu chính thức tại Việt Nam
+                  </h1>
+                  <p>
+                    Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra
+                    thông báo chính thức về ngày khởi chiếu cho bom tấn TENET
+                    tại các thị trường bên
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 100</i>
+                  <i class="fa fa-comment-alt"> 50</i>
+                </div>
+              </div>
+              <div class="new__block__item col-sm-4">
+                <div class="item__img">
+                  <img src="img/dienanhrw5.jpg" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    Khi phụ nữ không còn ở thế trốn chạy của nạn nhân
+                  </h1>
+                  <p>
+                    Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô
+                    Hình mang đến một góc nhìn mới về hình ảnh những người phụ
+                    nữ thời hiện đại. Điều đó được
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 100</i>
+                  <i class="fa fa-comment-alt"> 50</i>
+                </div>
+              </div>
+              <div class="new__block__item__small col-sm-4">
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhrwsmall2.jpg" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhrwsmall3.jpg" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Diễn viên đặc biệt của Bằng Chứng Vô Hình</p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhrwsmall3.jpg" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>
+                      Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!
+                    </p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall4.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="khuyenmai"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+          >
+            <div class="news__block__list row">
+              <div class="new__block__item col-sm-6">
+                <div class="item__img">
+                  <img src="img/dienanh1.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm
+                    Chiêu
+                  </h1>
+                  <p>
+                    Sau khi tiết lộ nhân tố đầu tiên là NSND Lê Khanh sẽ tiếp
+                    tục tham gia phần tiếp theo của Gái già lắm chiêu với mái
+                    tóc được cắt ngắn đầy mạnh mẽ và nam tính. Kaity Nguyễn sẽ
+                    là mỹ nhân tiếp theo nối gót hai đàn chị là Diễm My 9X và
+                    Ninh
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 0</i>
+                  <i class="fa fa-comment-alt"> 1</i>
+                </div>
+              </div>
+              <div class="new__block__item col-sm-6">
+                <div class="item__img">
+                  <img src="img/dienanh2.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ
+                    Pinocchio
+                  </h1>
+                  <p>
+                    Không chỉ chuyển tải được giá trị của tác phẩm gốc, “Cậu Bé
+                    Người Gỗ Pinocchio” của năm 2020 còn thành công chinh phục
+                    thế hệ khán giả hiện đại với một trải nghiệm điện ảnh đầy
+                    sắc màu nhưng cũng vô cùng mới lạ. Cùng
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 627</i>
+                  <i class="fa fa-comment-alt"> 127</i>
+                </div>
+              </div>
+            </div>
+            <div class="news__block__list row">
+              <div class="new__block__item col-sm-4">
+                <div class="item__img">
+                  <img src="img/dienanh3.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    TENET công bố ngày khởi chiếu chính thức tại Việt Nam
+                  </h1>
+                  <p>
+                    Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra
+                    thông báo chính thức về ngày khởi chiếu cho bom tấn TENET
+                    tại các thị trường bên
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 100</i>
+                  <i class="fa fa-comment-alt"> 50</i>
+                </div>
+              </div>
+              <div class="new__block__item col-sm-4">
+                <div class="item__img">
+                  <img src="img/dienanh4.jpg" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    Khi phụ nữ không còn ở thế trốn chạy của nạn nhân
+                  </h1>
+                  <p>
+                    Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô
+                    Hình mang đến một góc nhìn mới về hình ảnh những người phụ
+                    nữ thời hiện đại. Điều đó được
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 100</i>
+                  <i class="fa fa-comment-alt"> 50</i>
+                </div>
+              </div>
+              <div class="new__block__item__small col-sm-4">
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall1.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall2.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Diễn viên đặc biệt của Bằng Chứng Vô Hình</p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall3.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>
+                      Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!
+                    </p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall4.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__block__list row">
+              <div class="new__block__item col-sm-6">
+                <div class="item__img">
+                  <img src="img/dienanh1.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm
+                    Chiêu
+                  </h1>
+                  <p>
+                    Sau khi tiết lộ nhân tố đầu tiên là NSND Lê Khanh sẽ tiếp
+                    tục tham gia phần tiếp theo của Gái già lắm chiêu với mái
+                    tóc được cắt ngắn đầy mạnh mẽ và nam tính. Kaity Nguyễn sẽ
+                    là mỹ nhân tiếp theo nối gót hai đàn chị là Diễm My 9X và
+                    Ninh
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 0</i>
+                  <i class="fa fa-comment-alt"> 1</i>
+                </div>
+              </div>
+              <div class="new__block__item col-sm-6">
+                <div class="item__img">
+                  <img src="img/dienanh2.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ
+                    Pinocchio
+                  </h1>
+                  <p>
+                    Không chỉ chuyển tải được giá trị của tác phẩm gốc, “Cậu Bé
+                    Người Gỗ Pinocchio” của năm 2020 còn thành công chinh phục
+                    thế hệ khán giả hiện đại với một trải nghiệm điện ảnh đầy
+                    sắc màu nhưng cũng vô cùng mới lạ. Cùng
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 627</i>
+                  <i class="fa fa-comment-alt"> 127</i>
+                </div>
+              </div>
+            </div>
+            <div class="news__block__list row">
+              <div class="new__block__item col-sm-4">
+                <div class="item__img">
+                  <img src="img/dienanh3.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    TENET công bố ngày khởi chiếu chính thức tại Việt Nam
+                  </h1>
+                  <p>
+                    Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra
+                    thông báo chính thức về ngày khởi chiếu cho bom tấn TENET
+                    tại các thị trường bên
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 100</i>
+                  <i class="fa fa-comment-alt"> 50</i>
+                </div>
+              </div>
+              <div class="new__block__item col-sm-4">
+                <div class="item__img">
+                  <img src="img/dienanh4.jpg" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    Khi phụ nữ không còn ở thế trốn chạy của nạn nhân
+                  </h1>
+                  <p>
+                    Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô
+                    Hình mang đến một góc nhìn mới về hình ảnh những người phụ
+                    nữ thời hiện đại. Điều đó được
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 100</i>
+                  <i class="fa fa-comment-alt"> 50</i>
+                </div>
+              </div>
+              <div class="new__block__item__small col-sm-4">
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall1.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall2.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Diễn viên đặc biệt của Bằng Chứng Vô Hình</p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall3.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>
+                      Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!
+                    </p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall4.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__block__list row">
+              <div class="new__block__item col-sm-6">
+                <div class="item__img">
+                  <img src="img/dienanh1.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm
+                    Chiêu
+                  </h1>
+                  <p>
+                    Sau khi tiết lộ nhân tố đầu tiên là NSND Lê Khanh sẽ tiếp
+                    tục tham gia phần tiếp theo của Gái già lắm chiêu với mái
+                    tóc được cắt ngắn đầy mạnh mẽ và nam tính. Kaity Nguyễn sẽ
+                    là mỹ nhân tiếp theo nối gót hai đàn chị là Diễm My 9X và
+                    Ninh
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 0</i>
+                  <i class="fa fa-comment-alt"> 1</i>
+                </div>
+              </div>
+              <div class="new__block__item col-sm-6">
+                <div class="item__img">
+                  <img src="img/dienanh2.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ
+                    Pinocchio
+                  </h1>
+                  <p>
+                    Không chỉ chuyển tải được giá trị của tác phẩm gốc, “Cậu Bé
+                    Người Gỗ Pinocchio” của năm 2020 còn thành công chinh phục
+                    thế hệ khán giả hiện đại với một trải nghiệm điện ảnh đầy
+                    sắc màu nhưng cũng vô cùng mới lạ. Cùng
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 627</i>
+                  <i class="fa fa-comment-alt"> 127</i>
+                </div>
+              </div>
+            </div>
+            <div class="news__block__list row">
+              <div class="new__block__item col-sm-4">
+                <div class="item__img">
+                  <img src="img/dienanh3.png" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    TENET công bố ngày khởi chiếu chính thức tại Việt Nam
+                  </h1>
+                  <p>
+                    Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra
+                    thông báo chính thức về ngày khởi chiếu cho bom tấn TENET
+                    tại các thị trường bên
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 100</i>
+                  <i class="fa fa-comment-alt"> 50</i>
+                </div>
+              </div>
+              <div class="new__block__item col-sm-4">
+                <div class="item__img">
+                  <img src="img/dienanh4.jpg" />
+                </div>
+                <div class="item__content">
+                  <h1>
+                    Khi phụ nữ không còn ở thế trốn chạy của nạn nhân
+                  </h1>
+                  <p>
+                    Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô
+                    Hình mang đến một góc nhìn mới về hình ảnh những người phụ
+                    nữ thời hiện đại. Điều đó được
+                  </p>
+                </div>
+                <div class="item__icon">
+                  <i class="fa fa-thumbs-up"> 100</i>
+                  <i class="fa fa-comment-alt"> 50</i>
+                </div>
+              </div>
+              <div class="new__block__item__small col-sm-4">
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall1.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall2.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Diễn viên đặc biệt của Bằng Chứng Vô Hình</p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall3.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>
+                      Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!
+                    </p>
+                  </div>
+                </div>
+                <div class="item__small">
+                  <div class="item__small__img">
+                    <img src="./img/dienanhsmall4.png" />
+                  </div>
+                  <div class="item__small__content">
+                    <p>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn-xemthem" onclick="btnXemThem('800','myTabContent')">
+          xem thêm
+        </button>
+      </section>
     </section>
+    <section class="appblock">
+      <div class="homeapp">
+        <div class="homeapp__detail">
+          <p>Ứng dụng tiện lợi dành cho người yêu điện ảnh</p>
+          <p>
+            Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và
+            đổi quà hấp dẫn.
+          </p>
+          <span class="btn__App"> App miễn phí - Tải về ngay! </span>
+          <p>TIX có hai phiên bản <span>IOS</span> & <span>Android</span></p>
+        </div>
+        <div class="homeapp__app">
+          <div class="autoplay">
+            <div class="single-item__img"><img src="./img/slide5.jpg" /></div>
+            <div class="single-item__img"><img src="./img/slide6.jpg" /></div>
+            <div class="single-item__img"><img src="./img/slide7.jpg" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container row">
+        <div class="footer__tix row col-md-4 col-lg-4">
+          <p class="title col-xl-12">TIX</p>
+          <ul class="col-lg-6 FBG">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Brand Guidelines</a></li>
+          </ul>
+          <ul class="col-lg-6">
+            <li><a href="#">Thoả thuận sử dụng</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+          </ul>
+        </div>
+        <div class="footer__partner col-lg-4 row">
+          <p>ĐỐI TÁC</p>
+          <div class="linePartner col-xl-12">
+            <img src="img/VIETTINBANK.png" />
+            <img src="./img/IVB.png" />
+            <img src="./img/cnx.jpg" />
+            <img src="./img/cgv.png" />
+            <img src="./img/bhd.png" />
+          </div>
+          <div class="linePartner col-xl-12">
+            <img src="img/payoo.jpg" />
+            <img src="./img/dcine.png" />
+            <img src="./img/TOUCH.png" />
+            <img src="./img/123go.png" />
+            <img src="./img/megags.png" />
+          </div>
+          <div class="linePartner col-xl-12">
+            <img src="img/VIETTINBANK.png" />
+            <img src="./img/IVB.png" />
+            <img src="./img/cnx.jpg" />
+            <img src="./img/cgv.png" />
+            <img src="./img/bhd.png" />
+          </div>
+          <div class="linePartner col-xl-12">
+            <img src="img/payoo.jpg" />
+            <img src="./img/dcine.png" />
+            <img src="./img/TOUCH.png" />
+            <img src="./img/123go.png" />
+            <img src="./img/megags.png" />
+          </div>
+        </div>
+        <div class="col-md-2 col-lg-4 row">
+          <div class="mobileapp col-lg-6">
+            <p>MOBILE APP</p>
+            <a href="#"><img src="./img/apple-logo.png" /></a>
+            <a href="#"><img src="./img/android-logo.png" /></a>
+          </div>
+          <div class="social  col-md-12 col-lg-6">
+            <p>SOCIAL</p>
+            <a href="#"> <img src="./img/zalo-logo.png" /> </a>
+            <a href="#"> <img src="./img/facebook-logo.png" /> </a>
+          </div>
+        </div>
+      </div>
+      <hr class="hr__footer" />
+      <div class="container footer__2 row">
+        <div class="img__footer col-2 col-md-1">
+          <img src="./img/zion-logo.jpg" />
+        </div>
+        <div class="info__footer col-12 col-md-9">
+          <h4>TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</h4>
+          <p>
+            Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí
+            Minh, Việt Nam.
+          </p>
+          <p>
+            Giấy chứng nhận đăng ký kinh doanh số: 0101659783, đăng ký thay đổi
+            lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở kế hoạch và đầu tư Thành
+            phố Hồ Chí Minh cấp.
+          </p>
+          <p>Số Điện Thoại (Hotline): 1900 545 436</p>
+          <p>Email: <a href = "mailto: support@tix.vn">support@tix.vn</a>
+          </p>
+        </div>
+        <div class="img__footer2 col-2 col-md-2">
+          <img src="./img/bocongthuong.png" />
+        </div>
+      </div>
+    </footer>
+    <div id="overlay"></div>
+    <!--END MAIN-CONTAINER-->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -1225,5 +3305,10 @@
     <script src="./js/JS/slick.js"></script>
     <script src="./js/JS/carousel.js"></script>
     <script src="./js/JS/cinemalist.js"></script>
+    <script src="./js/JS/buttonxemthem.js"></script>
+    <script src="./js/JS/active.js"></script>
+    <script src="./js/JS/header.js"></script>
   </body>
+ 
+
 </html>

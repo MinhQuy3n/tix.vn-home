@@ -1,0 +1,106 @@
+.listflim {
+  padding: spacing(1.5) spacing(2);
+  border-top: 1px solid rgba(202, 199, 199, 0.5);
+  border-bottom: 1px solid rgba(202, 199, 199, 0.5);
+  border-right: 1px solid rgba(202, 199, 199, 0.5);
+  height: 400px;
+  max-height: 700px;
+  overflow-y: auto;
+  .listflim__item {
+    border-bottom: 1px solid rgba(202, 199, 199, 0.5);
+    padding-bottom: spacing(2);
+    max-height: 70px;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-bottom: spacing(2);
+    cursor: pointer;
+    .film__title {
+      display: flex;
+      margin-bottom: spacing(1);
+
+      .film__title__img {
+        width: 15%;
+      }
+      .film__title__name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: spacing(1);
+        width: 85%;
+        p {
+          color: $textPrimary;
+          font-size: $subtitle;
+          font-weight: $fwBold;
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+          .green {
+            @include Button($green, 1px solid transparent, 0 10px, 4px);
+            color: $textWhite;
+            font-size: $body1;
+            margin-right: spacing(0.5);
+          }
+          .red {
+            @include Button($redOrange, 1px solid transparent, 0 10px, 4px);
+            color: $textWhite;
+            font-size: $body1;
+            margin-right: spacing(0.5);
+          }
+        }
+        p:last-child {
+          color: $textGrey;
+          font-size: $body2;
+          font-weight: $fwLight;
+        }
+      }
+    }
+    .film__detail {
+      .version {
+        font-weight: $fwBold;
+      }
+      .sessions {
+        display: flex;
+        align-items: center;
+        .s-session {
+          text-decoration: none;
+          color: $textLightGrey;
+          @include Button(
+            rgba(246, 246, 246, 0.5),
+            1px solid #e4e4e4,
+            spacing(0.5) spacing(1),
+            7px
+          );
+          margin: spacing(0) spacing(1) 0 0;
+          .s-start-time {
+            color: $textGreen;
+          }
+        }
+        .s-session:hover .s-start-time {
+          color: $textRedOrange;
+        }
+      }
+    }
+  }
+  .active {
+    max-height: 500px;
+  }
+  @media screen and (max-width:992px){
+    .owl-nav{
+      display:none;
+    }
+  }
+}
+.listflim::-webkit-scrollbar{
+    width:5px;
+    background:transparent;
+    display:none;
+} 
+.listflim::-webkit-scrollbar-thumb{
+    background: linear-gradient(to top,#999 , transparent);
+    border-radius:5px;
+
+}
+.listflim:hover::-webkit-scrollbar{
+    display:block;
+}
+

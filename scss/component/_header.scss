@@ -1,87 +1,98 @@
-.header{
-    background-color: rgba(255,255,255,0.5);
-    box-shadow: 0 0 15px rgba(0,0,0,.3);
-    width:100%;
-    position: fixed;
-    z-index:9;
-    height:60px;
-    top:0;
-    .navbar{
-        display:flex;
-        justify-content: space-between !important;
-        position: relative;
-        height:60px;
-        .logo{
-            position: absolute;
-            top:50%;
-            left:15px;
-            transform: translateY(-50%);
-            img{
-                width:50px;
-            }
-        }
-        .collapse{
-            position:absolute;
-            left:50%;
-            top:50%;
-            transform: translate(-50%,-50%);
-            .nav-link{
-                color:$textPrimary;
-                font-size:$subtitle;
-                margin-right: spacing(2);
-                padding:0;
-                transition: .9s;
-            }
-            .nav-link:hover{
-                color:$textRedOrange;
-            }
-        }
-        .formHeader{
-            position:absolute;
-            right:15px;
-            top:50%;
-            transform: translateY(-50%);
-            .navbar-nav{
-                display:flex;
-            justify-content: center;
-            align-items:center;
-                .nav-item{
-                    .nav-link{
-                        color:$textGrey;
-                        font-size:$subtitle;
-                        margin-right: spacing(2);
-                        padding:0;
-                        transition: .9s;
-                        display:flex;
-                        align-items: center;
-                        justify-content: center;
-                        i{
-                            font-size:$h3;
-                            color:$textLightGrey;
-                            margin-right:spacing(1);
-                        }
-                        span{
-                            font-size:$body2+1px;
-                        }
-                    }
-                    .dropdown{  
-                        button{
-                            display:flex;
-                            justify-content:center;
-                            align-items:center;
-                            background:transparent;
-                            font-size:$body2+1px;
-                            span{
-                                font-size:$h5;
-                                margin-right:spacing(0.5);
-                            }
-                           span{
-                               color:$grey;
-                           }
-                        }
-                    }
-                }
-            }
-        }
+.header {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+  height: 60px;
+  top: 0;
+  .navbar {
+    display: flex;
+    justify-content: space-between !important;
+    position: relative;
+    height: 60px;
+    .logo {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      img {
+        width: 50px;
+      }
     }
+    .collapse {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      .nav-link {
+        color: $textPrimary;
+        font-size: $subtitle;
+        margin-right: spacing(2);
+        padding: 0;
+        transition: 0.9s;
+      }
+      .nav-link:hover {
+        color: $textRedOrange;
+      }
+    }
+    .formHeader {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      .navbar-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .nav-item {
+          .nav-link {
+            color: $textGrey;
+            font-size: $subtitle;
+            margin-right: spacing(2);
+            padding: 0;
+            transition: 0.9s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i {
+              font-size: $h3;
+              color: $textLightGrey;
+              margin-right: spacing(1);
+            }
+            span {
+              font-size: $body2 + 1px;
+            }
+          }
+          .dropdown {
+            button {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background: transparent;
+              font-size: $body2 + 1px;
+              span {
+                font-size: $h5;
+                margin-right: spacing(0.5);
+              }
+              span {
+                color: $grey;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .formHeader {
+      display: none;
+    }
+    
+  }
+  @media screen and (min-width: 993px) {
+    .btn__open__header {
+        display: none;
+      }
+  }
 }

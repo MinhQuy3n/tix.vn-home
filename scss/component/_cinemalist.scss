@@ -1,28 +1,133 @@
-.cinema{
-    .cinema__list{
-        display:none;
-    }
-    .cinemalist{
-        .cinemalist__brand{
-            display:flex;
-            flex-direction:column;
-            cursor: pointer;
-            border:1px solid #999;
-            flex: 0 0 12.666667%;
-            .cinema__logo{
-                width:100px;
-                opacity: 0.5;
-                text-align:center;
-                img{
-                    width:80%;
-                    padding:spacing(2);
-                    border-bottom: 1px solid #999;
+.cinemablock {
+  padding-top: 120px;
+    background: url(../../img/back-news.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom:spacing(5);
+  .cinema__list {
+    display: none;
+  }
+  .cinemalist {
+    max-height: 500px;
 
-                }
-            }
-            .cinema__logo:hover{
-                opacity:1;
-            }
+    &__brand {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      border: 1px solid rgba(202, 199, 199, 0.5);
+      flex: 0 0 12.666667%;
+      .cinema__logo {
+        width: 100px;
+        opacity: 0.5;
+        text-align: center;
+        img {
+          width: 80%;
+          padding: spacing(2);
+          border-bottom: 1px solid rgba(202, 199, 199, 0.5);
         }
+      }
+      .cinema__logo:hover {
+        opacity: 1;
+      }
     }
+    .cinema__list {
+      border-top: 1px solid rgba(202, 199, 199, 0.5);
+      border-bottom: 1px solid rgba(202, 199, 199, 0.5);
+      border-right: 1px solid rgba(202, 199, 199, 0.5);
+      padding: 15px 10px;
+      margin-bottom: 0;
+      height: 400px;
+      max-height: 700px;
+      overflow-y: auto;
+      
+      .cinema {
+        display: flex;
+        list-style-type: none;
+        cursor: pointer;
+        opacity: 0.5;
+        transition: 0.5s;
+        padding-bottom: spacing(1);
+        margin-bottom: spacing(2);
+
+        border-bottom: 1px solid rgba(202, 199, 199, 0.5);
+        .logo {
+          width: 25%;
+          margin-right: 10px;
+          line-height: 50px;
+          img {
+            width: 100%;
+          }
+        }
+        .cinema__detail {
+          width: 75%;
+          p {
+            margin: 0;
+            font-size: $subtitle;
+            .colorCgv {
+              color: #ff0000;
+            }
+            .colorBHD {
+              color: #8bc541;
+            }
+            .colorGLX {
+              color: #f60;
+            }
+            .colorCNS {
+              color: #df0d7a;
+            }
+            .colorDDC {
+              color: #9c9c9c;
+            }
+            .colorMega {
+              color: #e5a813;
+            }
+            .colorLotte {
+              color: #ca4137;
+            }
+          }
+          p:nth-child(2) {
+            font-size: $body2;
+            color: #949494;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          a {
+            font-size: $body2;
+            color: #fb4226 !important;
+            text-decoration: none;
+            outline: none;
+          }
+        }
+      }
+      .cinema:hover {
+        opacity: 1;
+      }
+      .active {
+        opacity: 1;
+      }
+    }
+    .cinema__list::-webkit-scrollbar{
+        width:5px;
+        background:transparent;
+        display:none;
+    } 
+    .cinema__list::-webkit-scrollbar-thumb{
+        background: linear-gradient(to top,#999 , transparent);
+        border-radius:5px;
+
+    }
+    .cinema__list:hover::-webkit-scrollbar{
+        display:block;
+    }
+    .listflim {
+      display: none;
+    }
+  }
 }
+@media screen and (max-width: 768px){
+  .cinemablock{
+    display:none;
+  }
+}
+
